@@ -141,9 +141,8 @@ export default function ServiceLayout({
               <div className="aspect-[4/5] rounded-tl-[60px] rounded-br-[60px] lg:rounded-tl-[100px] lg:rounded-br-[100px] overflow-hidden premium-shadow relative z-0">
                 <img
                   src={heroImage}
-                  alt="Serviço Jurídico"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
+                  alt="Servico Juridico"
+                  className="w-full h-full scale-110 object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-brand-navy/10 mix-blend-multiply" />
               </div>

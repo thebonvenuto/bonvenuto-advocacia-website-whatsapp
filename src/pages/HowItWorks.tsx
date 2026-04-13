@@ -2,6 +2,8 @@ import { motion } from 'motion/react';
 import { MessageCircle, Search, Map, Languages, ShieldCheck } from 'lucide-react';
 import Section from '../components/ui/Section';
 import { CONTACT_INFO } from '../constants';
+import howItWorksHeroImage from '../assets/agente-de-call-center-feliz-usando-computador-enquanto-se-comunica-com-clientes-e-trabalha-no-escritorio_637285-6165.avif';
+import sigiloSegurancaImage from '../assets/Como Funciona imagem do card \u201cSigilo e Seguran\u00e7a\u201d.png';
 
 export default function HowItWorks() {
   const steps = [
@@ -68,10 +70,9 @@ export default function HowItWorks() {
             >
               <div className="aspect-[4/5] rounded-tl-[60px] rounded-br-[60px] lg:rounded-tl-[100px] lg:rounded-br-[100px] overflow-hidden premium-shadow relative z-0">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1200"
+                  src={howItWorksHeroImage}
                   alt="Nossa Equipe"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
+                  className="w-full h-full scale-110 object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-brand-navy/10 mix-blend-multiply" />
               </div>
@@ -180,10 +181,9 @@ export default function HowItWorks() {
               </div>
               <div className="rounded-xl overflow-hidden h-40 lg:h-48">
                 <img 
-                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800" 
-                  alt="Confiança" 
-                  className="w-full h-full object-cover grayscale"
-                  referrerPolicy="no-referrer"
+                  src={sigiloSegurancaImage}
+                  alt="Confianca" 
+                  className="w-full h-full scale-110 object-cover object-center"
                 />
               </div>
             </motion.div>

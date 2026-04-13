@@ -1,12 +1,15 @@
 import ServiceLayout from '../components/ServiceLayout';
 import { HeartHandshake, BriefcaseMedical, FileSearch } from 'lucide-react';
+import alimentosGravidicosHeroImage from '../assets/Alimentos Grav\u00eddicos hero.png';
+import alimentosGravidicosUltrassomImage from '../assets/Alimentos Grav\u00eddicos imagem de ultrassom.png';
+import alimentosGravidicosSapatinhosImage from '../assets/Alimentos Grav\u00eddicos imagem de sapatinhos (1).png';
 
 export default function AlimentosGravidicos() {
   return (
     <ServiceLayout
       title={<>Apoio financeiro e tranquilidade para a sua <span className="italic">gestação.</span></>}
       subtitle="A gestação é um momento que exige cuidado e segurança. Os alimentos gravídicos garantem que os custos do pré-natal ao parto sejam compartilhados, protegendo a sua saúde e o futuro do seu bebê."
-      heroImage="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=1200"
+      heroImage={alimentosGravidicosHeroImage}
       heroPrimaryButtonText="Falar com um Especialista"
       description="A proteção ao seu filho começa antes mesmo do nascimento. Os alimentos gravídicos são recursos destinados a cobrir as despesas essenciais da gestação, garantindo assistência médica, alimentação e o amparo necessário para você e seu bebê."
       quote="Segurança - Garantimos que seus direitos sejam respeitados desde o primeiro mês."
@@ -38,18 +41,16 @@ export default function AlimentosGravidicos() {
         <div className="grid grid-cols-1 gap-4 h-full">
           <div className="aspect-[16/9] rounded-2xl overflow-hidden premium-shadow">
             <img 
-              src="https://images.unsplash.com/photo-1559734840-f9509ee5677f?auto=format&fit=crop&q=80&w=800" 
+              src={alimentosGravidicosUltrassomImage}
               alt="Ultrassom" 
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
+              className="w-full h-full scale-110 object-cover object-center"
             />
           </div>
           <div className="aspect-[16/9] rounded-2xl overflow-hidden premium-shadow">
             <img 
-              src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=800" 
-              alt="Sapatinhos de bebê" 
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
+              src={alimentosGravidicosSapatinhosImage}
+              alt="Sapatinhos de bebe" 
+              className="w-full h-full scale-110 object-cover object-center"
             />
           </div>
         </div>

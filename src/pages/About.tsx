@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { MessageCircle, Scale, Users, ShieldCheck } from 'lucide-react';
 import Section from '../components/ui/Section';
 import { CONTACT_INFO } from '../constants';
+import drCarloAboutImage from '../assets/Foto Carlo2.jpg';
 
 export default function About() {
   return (
@@ -50,17 +51,11 @@ export default function About() {
             >
               <div className="aspect-[4/5] rounded-tl-[60px] rounded-br-[60px] lg:rounded-tl-[100px] lg:rounded-br-[100px] overflow-hidden premium-shadow relative z-0 bg-brand-navy">
                 <img
-                  src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200"
-                  alt="Escritório Bonvenuto"
-                  className="w-full h-full object-cover opacity-40 grayscale"
-                  referrerPolicy="no-referrer"
+                  src={drCarloAboutImage}
+                  alt="Dr. Carlo Bonvenuto"
+                  className="w-full h-full scale-110 object-cover object-[center_20%]"
                 />
-                <div className="absolute inset-0 flex items-center justify-center p-8 lg:p-12 text-center">
-                   <div>
-                      <p className="text-white font-serif text-2xl lg:text-4xl mb-2 lg:mb-4 italic">Escritório Bonvenuto</p>
-                      <p className="text-brand-gold font-serif text-4xl lg:text-6xl">Law Work</p>
-                   </div>
-                </div>
+                <div className="absolute inset-0 bg-brand-navy/10 mix-blend-multiply" />
               </div>
               
               {/* Floating Quote Card */}
@@ -129,10 +124,9 @@ export default function About() {
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-lg overflow-hidden grayscale">
                   <img 
-                    src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=200" 
+                    src={drCarloAboutImage}
                     alt={`Dr. ${CONTACT_INFO.lawyerName}`} 
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
+                    className="w-full h-full scale-110 object-cover object-[center_20%]"
                   />
                 </div>
                 <div>

@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { MessageCircle, FileText, Clock, ChevronRight } from 'lucide-react';
 import Section from '../components/ui/Section';
 import { CONTACT_INFO } from '../constants';
+import faqHeroImage from '../assets/FAQ hero.png';
 
 export default function FAQ() {
   return (
@@ -50,10 +51,9 @@ export default function FAQ() {
             >
               <div className="aspect-[4/5] rounded-tl-[60px] rounded-br-[60px] lg:rounded-tl-[100px] lg:rounded-br-[100px] overflow-hidden premium-shadow relative z-0">
                 <img
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200"
-                  alt="Escritório Bonvenuto"
-                  className="w-full h-full object-cover grayscale"
-                  referrerPolicy="no-referrer"
+                  src={faqHeroImage}
+                  alt="Escritorio Bonvenuto"
+                  className="w-full h-full scale-110 object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-brand-navy/5 mix-blend-multiply" />
               </div>

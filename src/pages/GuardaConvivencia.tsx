@@ -1,13 +1,14 @@
 import ServiceLayout from '../components/ServiceLayout';
 import { Ban, ListChecks, AlertTriangle, ShieldCheck, MessageCircle } from 'lucide-react';
 import { CONTACT_INFO } from '../constants';
+import guardaConvivenciaHeroImage from '../assets/Guarda e Conviv\u00eancia hero (2).png';
 
 export default function GuardaConvivencia() {
   return (
     <ServiceLayout
       title={<>Segurança jurídica para a <span className="italic">convivência</span> e a guarda do seu filho.</>}
       subtitle="Atuamos com discrição e foco no bem-estar da criança, garantindo que o vínculo afetivo seja preservado com total segurança jurídica."
-      heroImage="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&q=80&w=1200"
+      heroImage={guardaConvivenciaHeroImage}
       heroPrimaryButtonText="Falar com um Especialista"
       heroPrimaryButtonVariant="black"
       description="A guarda é, acima de tudo, uma responsabilidade compartilhada. Atuamos para definir regimes de convivência que respeitem os laços afetivos e garantam a estabilidade emocional da criança, buscando sempre o melhor para o seu desenvolvimento."

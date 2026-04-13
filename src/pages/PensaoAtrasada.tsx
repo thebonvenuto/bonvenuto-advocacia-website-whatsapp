@@ -1,12 +1,13 @@
 import ServiceLayout from '../components/ServiceLayout';
 import { Calendar, HeartOff, PiggyBank } from 'lucide-react';
+import pensaoAtrasadaHeroImage from '../assets/Pens\u00e3o Aliment\u00edcia hero.png';
 
 export default function PensaoAtrasada() {
   return (
     <ServiceLayout
       title={<>Segurança e agilidade para recuperar a <span className="italic">pensão em atraso.</span></>}
       subtitle="A segurança financeira do seu filho não pode esperar. Atuamos com agilidade para garantir o cumprimento imediato do dever alimentar e a tranquilidade da sua família."
-      heroImage="https://images.unsplash.com/photo-1536060316316-2466bda904f1?auto=format&fit=crop&q=80&w=1200"
+      heroImage={pensaoAtrasadaHeroImage}
       heroPrimaryButtonText="Falar com um Especialista"
       description="Quando a pensão não é paga, existem mecanismos legais para garantir o recebimento. Atuamos com estratégias eficazes para recuperar valores em atraso, buscando assegurar o amparo que é de direito do seu filho."
       quote="A prioridade é o futuro."

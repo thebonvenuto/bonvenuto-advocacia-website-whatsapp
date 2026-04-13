@@ -131,16 +131,10 @@ export default function Contact() {
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                 </a>
 
-                <div className="mt-12 flex items-center justify-center gap-6">
-                  <div className="flex -space-x-3">
-                    {[1, 2, 3].map((i) => (
-                      <div key={i} className="w-10 h-10 rounded-full border-2 border-brand-navy bg-brand-graphite overflow-hidden">
-                        <img src={`https://picsum.photos/seed/lawyer${i}/100/100`} alt="Equipe" className="w-full h-full object-cover grayscale" referrerPolicy="no-referrer" />
-                      </div>
-                    ))}
-                  </div>
+                <div className="mt-12 flex items-center justify-center gap-3">
+                  <div className="h-2.5 w-2.5 rounded-full bg-green-400 animate-pulse" />
                   <p className="text-xs text-white/40 uppercase tracking-[0.2em]">
-                    Equipe online agora
+                    Atendimento online agora
                   </p>
                 </div>
               </div>

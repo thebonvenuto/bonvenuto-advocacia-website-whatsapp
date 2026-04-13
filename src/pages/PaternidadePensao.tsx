@@ -1,12 +1,15 @@
 import ServiceLayout from '../components/ServiceLayout';
 import { FileText, UserX, Wallet, CheckCircle2 } from 'lucide-react';
+import paternidadePensaoHeroImage from '../assets/Paternidade e Pens\u00e3o hero.png';
+import paternidadePensaoFamilyImage from '../assets/Paternidade e Pens\u00e3o imagem quadrada de fam\u00edlia.png';
+import tjspTextureImage from '../assets/tjsp2.png';
 
 export default function PaternidadePensao() {
   return (
     <ServiceLayout
       title={<>Reconhecimento de <span className="italic">paternidade</span> e amparo para o seu filho.</>}
       subtitle="Assegurar os direitos do seu filho exige cuidado e excelência jurídica. Atuamos para que o reconhecimento e o suporte financeiro sejam estabelecidos com a dignidade que sua família merece."
-      heroImage="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=1200"
+      heroImage={paternidadePensaoHeroImage}
       heroPrimaryButtonText="Falar com um Especialista"
       description="O reconhecimento de paternidade é um direito fundamental. Ele assegura à criança não apenas o nome no registro, mas o acesso a direitos essenciais e ao amparo financeiro necessário para o seu desenvolvimento."
       quote="Garantir o amparo é o primeiro passo para um futuro seguro."
@@ -38,19 +41,17 @@ export default function PaternidadePensao() {
         <div className="grid grid-cols-2 gap-4 h-full">
           <div className="aspect-square rounded-2xl overflow-hidden premium-shadow">
             <img 
-              src="https://images.unsplash.com/photo-1536640712247-c45474d66489?auto=format&fit=crop&q=80&w=600" 
-              alt="Família" 
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
+              src={paternidadePensaoFamilyImage}
+              alt="Familia" 
+              className="w-full h-full scale-110 object-cover object-center"
             />
           </div>
           <div className="aspect-square bg-[#111827] rounded-2xl flex items-center justify-center premium-shadow relative overflow-hidden">
              <div className="absolute inset-0 opacity-20">
                 <img 
-                  src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=400" 
+                  src={tjspTextureImage}
                   alt="Textura" 
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
+                  className="w-full h-full scale-110 object-cover object-center"
                 />
              </div>
              <CheckCircle2 size={64} className="text-brand-gold relative z-10" />

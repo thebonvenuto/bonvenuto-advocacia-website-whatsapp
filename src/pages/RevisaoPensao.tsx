@@ -1,12 +1,14 @@
 import ServiceLayout from '../components/ServiceLayout';
 import { TrendingUp, GraduationCap, Users, ArrowRight } from 'lucide-react';
+import revisaoPensaoHeroImage from '../assets/Revis\u00e3o de Pens\u00e3o hero.jpg';
+import drCarloCardImage from '../assets/Foto Carlo1.jpg';
 
 export default function RevisaoPensao() {
   return (
     <ServiceLayout
       title={<>Ajuste e equilíbrio para a <span className="italic">pensão alimentícia.</span></>}
       subtitle="A vida muda e as necessidades também. Quando o equilíbrio financeiro se altera, a lei permite o ajuste do valor da pensão para garantir a dignidade de quem recebe e a viabilidade de quem paga."
-      heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1200"
+      heroImage={revisaoPensaoHeroImage}
       heroPrimaryButtonText="Falar com um Especialista"
       heroSecondaryButtonText="Entender Situações"
       description="O valor da pensão alimentícia deve refletir a realidade atual. Seja pelo aumento das necessidades do seu filho ou pela mudança na condição financeira de quem paga, a revisão judicial é o caminho para restabelecer um equilíbrio justo e adequado."
@@ -48,10 +50,9 @@ export default function RevisaoPensao() {
           {/* Abstract background image/graphic */}
           <div className="absolute right-0 bottom-0 w-1/3 h-full opacity-20">
             <img 
-              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=400" 
-              alt="Justiça" 
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
+              src={drCarloCardImage}
+              alt="Dr. Carlo Bonvenuto" 
+              className="w-full h-full scale-110 object-cover object-[center_20%]"
             />
           </div>
         </div>
