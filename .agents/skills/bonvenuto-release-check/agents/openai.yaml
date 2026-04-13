@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bonvenuto Release Check"
+  short_description: "Final pre-release QA for Bonvenuto front-end"
+  default_prompt: "Use $bonvenuto-release-check to do the final pass before we call this change ready."

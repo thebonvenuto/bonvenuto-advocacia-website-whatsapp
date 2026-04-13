@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bonvenuto Mobile QA"
+  short_description: "Mobile-first QA for Bonvenuto site pages"
+  default_prompt: "Use $bonvenuto-mobile-qa to audit this page like a real mobile-first release check."

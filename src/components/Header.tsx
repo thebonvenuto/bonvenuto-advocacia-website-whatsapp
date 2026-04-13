@@ -4,6 +4,7 @@ import { Menu, X, MessageCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 import { CONTACT_INFO } from '../constants';
+import bonvenutoLogo from '../assets/logo bonvenuto advocacia preta sem fundo.png';
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -30,13 +31,12 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-[100] glass-nav">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex flex-col">
-            <span className="text-2xl font-serif font-semibold tracking-tighter text-brand-navy">
-              BONVENUTO
-            </span>
-            <span className="text-[10px] tracking-[0.2em] uppercase text-brand-gold font-medium -mt-1">
-              ADVOCACIA
-            </span>
+          <Link to="/" className="flex items-center">
+            <img
+              src={bonvenutoLogo}
+              alt="Bonvenuto Advocacia Online"
+              className="h-10 sm:h-11 md:h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}
