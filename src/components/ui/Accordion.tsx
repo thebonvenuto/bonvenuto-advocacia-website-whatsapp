@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { revealViewport, cardReveal, smoothEase } from '../../lib/motion';
 
 interface AccordionItemProps {
   question: string;
@@ -14,17 +15,23 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer, isOpen,
   const isDark = variant === 'dark';
   
   return (
-    <div className={`${isDark ? 'bg-brand-navy/40 border-white/10' : 'bg-white border-black/5'} rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.02)] border overflow-hidden`}>
+    <motion.div
+      variants={cardReveal}
+      viewport={revealViewport}
+      initial="hidden"
+      whileInView="visible"
+      className={`${isDark ? 'bg-brand-navy/40 border-white/10' : 'bg-white border-black/5'} rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.02)] border overflow-hidden`}
+    >
       <button
         onClick={onClick}
-        className="w-full px-8 py-6 flex items-center justify-between text-left group"
+        className="w-full px-8 py-6 flex items-center justify-between text-left group transition-colors duration-300"
       >
         <h4 className={`font-serif text-lg md:text-xl ${isDark ? 'text-white group-hover:text-brand-gold' : 'text-brand-navy group-hover:text-brand-gold'} transition-colors`}>
           {question}
         </h4>
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.28, ease: smoothEase }}
           className={`${isDark ? 'text-white/40' : 'text-brand-graphite/40'} shrink-0 ml-4`}
         >
           <ChevronDown size={20} />
@@ -36,16 +43,22 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer, isOpen,
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.28, ease: smoothEase }}
             className="overflow-hidden"
           >
-            <div className={`px-8 pb-6 ${isDark ? 'text-white/60' : 'text-brand-graphite/60'} leading-relaxed text-sm md:text-base`}>
+            <motion.div
+              initial={{ y: -8, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -6, opacity: 0 }}
+              transition={{ duration: 0.24, ease: smoothEase }}
+              className={`px-8 pb-6 ${isDark ? 'text-white/60' : 'text-brand-graphite/60'} leading-relaxed text-sm md:text-base`}
+            >
               {answer}
-            </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 }
 

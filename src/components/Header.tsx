@@ -4,6 +4,7 @@ import { Menu, X, MessageCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 import { CONTACT_INFO } from '../constants';
+import { smoothEase, staggerGroup, cardReveal } from '../lib/motion';
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -52,15 +53,18 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
-            <a
+            <motion.a
               href={CONTACT_INFO.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-navy text-white px-6 py-2.5 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-brand-navy/90 transition-all premium-shadow"
+              whileHover={{ y: -2, scale: 1.015 }}
+              whileTap={{ scale: 0.985 }}
+              transition={{ duration: 0.22, ease: smoothEase }}
             >
               <MessageCircle size={18} />
               Atendimento
-            </a>
+            </motion.a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -81,20 +85,26 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: '100vh' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            transition={{ duration: 0.34, ease: smoothEase }}
             className="md:hidden fixed inset-0 top-20 bg-brand-offwhite z-[40] overflow-y-auto"
           >
-            <div className="container-custom py-10 flex flex-col min-h-[calc(100vh-5rem)]">
+            <motion.div
+              variants={staggerGroup}
+              initial="hidden"
+              animate="visible"
+              className="container-custom py-10 flex flex-col min-h-[calc(100vh-5rem)]"
+            >
               <div className="space-y-2 mb-12">
                 {navLinks.map((link) => (
-                  <Link
-                    key={link.path}
-                    to={link.path}
-                    onClick={() => setIsOpen(false)}
-                    className="block py-4 text-3xl font-serif text-brand-navy border-b border-brand-gold/10"
-                  >
-                    {link.name}
-                  </Link>
+                  <motion.div key={link.path} variants={cardReveal}>
+                    <Link
+                      to={link.path}
+                      onClick={() => setIsOpen(false)}
+                      className="block py-4 text-3xl font-serif text-brand-navy border-b border-brand-gold/10"
+                    >
+                      {link.name}
+                    </Link>
+                  </motion.div>
                 ))}
               </div>
               
@@ -102,30 +112,32 @@ export default function Header() {
                 <p className="text-[10px] uppercase tracking-[0.2em] text-brand-gold font-bold mb-6">Nossos Serviços</p>
                 <div className="grid grid-cols-1 gap-y-5">
                   {services.map((service) => (
-                    <Link
-                      key={service.path}
-                      to={service.path}
-                      onClick={() => setIsOpen(false)}
-                      className="text-lg text-brand-graphite/70 hover:text-brand-gold transition-colors"
-                    >
-                      {service.name}
-                    </Link>
+                    <motion.div key={service.path} variants={cardReveal}>
+                      <Link
+                        to={service.path}
+                        onClick={() => setIsOpen(false)}
+                        className="text-lg text-brand-graphite/70 hover:text-brand-gold transition-colors"
+                      >
+                        {service.name}
+                      </Link>
+                    </motion.div>
                   ))}
                 </div>
               </div>
 
-              <div className="mt-auto pt-10 pb-20">
-                <a
+              <motion.div variants={cardReveal} className="mt-auto pt-10 pb-20">
+                <motion.a
                   href={CONTACT_INFO.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-gold w-full flex items-center justify-center py-5"
+                  whileTap={{ scale: 0.985 }}
                 >
                   <MessageCircle size={20} className="mr-3" />
                   Falar com um especialista
-                </a>
-              </div>
-            </div>
+                </motion.a>
+              </motion.div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
