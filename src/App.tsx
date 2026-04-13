@@ -17,6 +17,7 @@ import HowItWorks from './pages/HowItWorks';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
+import TypographyPreview from './pages/TypographyPreview';
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="/politica-de-privacidade" element={<Privacy />} />
+          <Route path="/tipografia-preview" element={<TypographyPreview />} />
         </Routes>
       </Layout>
     </Router>
