@@ -1,4 +1,0 @@
-interface:
-  display_name: "Bonvenuto Copy Compliance"
-  short_description: "Copy safety and tone review for Bonvenuto site"
-  default_prompt: "Use $bonvenuto-copy-compliance to review this copy for tone, clarity, and safe claims."

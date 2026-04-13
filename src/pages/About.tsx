@@ -129,7 +129,7 @@ export default function About() {
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-lg overflow-hidden grayscale">
                   <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200" 
+                    src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=200" 
                     alt={`Dr. ${CONTACT_INFO.lawyerName}`} 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"

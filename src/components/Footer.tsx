@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MessageCircle, Mail, MapPin, Phone } from 'lucide-react';
 import { CONTACT_INFO } from '../constants';
-import bonvenutoLogo from '../assets/logo bonvenuto advocacia preta sem fundo.png';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,12 +28,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 text-center lg:text-left">
           {/* Brand Column */}
           <div className="space-y-6 flex flex-col items-center lg:items-start">
-            <Link to="/" className="flex items-center">
-              <img
-                src={bonvenutoLogo}
-                alt="Bonvenuto Advocacia Online"
-                className="h-12 md:h-14 w-auto"
-              />
+            <Link to="/" className="flex flex-col">
+              <span className="text-2xl font-serif font-semibold tracking-tighter text-white">
+                BONVENUTO
+              </span>
+              <span className="text-[10px] tracking-[0.2em] uppercase text-brand-gold font-medium -mt-1">
+                ADVOCACIA
+              </span>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs mx-auto lg:mx-0">
               Especialistas em Direito de Família com foco em soluções humanas, seguras e ágeis para o bem-estar dos seus filhos.

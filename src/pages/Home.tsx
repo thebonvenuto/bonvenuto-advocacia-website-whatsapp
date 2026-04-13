@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Section from '../components/ui/Section';
 import Accordion from '../components/ui/Accordion';
 import { CONTACT_INFO } from '../constants';
-import drCarloBonvenutoImage from '../assets/dr-carlo-bonvenuto.jpg';
 
 export default function Home() {
   const services = [
@@ -104,7 +103,7 @@ export default function Home() {
             >
               <div className="aspect-[3/4] lg:aspect-[4/5] rounded-t-[120px] lg:rounded-t-[200px] overflow-hidden premium-shadow relative z-0">
                 <img
-                  src={drCarloBonvenutoImage}
+                  src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=800"
                   alt="Dr. Carlo Bonvenuto"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

@@ -6,7 +6,7 @@ export default function PaternidadePensao() {
     <ServiceLayout
       title={<>Reconhecimento de <span className="italic">paternidade</span> e amparo para o seu filho.</>}
       subtitle="Assegurar os direitos do seu filho exige cuidado e excelência jurídica. Atuamos para que o reconhecimento e o suporte financeiro sejam estabelecidos com a dignidade que sua família merece."
-      heroImage="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1200"
+      heroImage="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=1200"
       heroPrimaryButtonText="Falar com um Especialista"
       description="O reconhecimento de paternidade é um direito fundamental. Ele assegura à criança não apenas o nome no registro, mas o acesso a direitos essenciais e ao amparo financeiro necessário para o seu desenvolvimento."
       quote="Garantir o amparo é o primeiro passo para um futuro seguro."

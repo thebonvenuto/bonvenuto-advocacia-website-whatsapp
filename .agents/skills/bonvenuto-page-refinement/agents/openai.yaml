@@ -1,4 +1,0 @@
-interface:
-  display_name: "Bonvenuto Page Refinement"
-  short_description: "Route-level refinement for Bonvenuto site pages"
-  default_prompt: "Use $bonvenuto-page-refinement to improve this page without redesigning the whole site."

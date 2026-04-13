@@ -1,4 +1,0 @@
-interface:
-  display_name: "Bonvenuto Site Constitution"
-  short_description: "Scope guardrails for the Bonvenuto front-end site"
-  default_prompt: "Use $bonvenuto-site-constitution to check whether this change fits the Bonvenuto site scope."
