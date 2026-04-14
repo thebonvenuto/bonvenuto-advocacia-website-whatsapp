@@ -62,4 +62,3 @@ Refinar motion e animacoes de secoes do site da Bonvenuto Advocacia sem redesenh
 - O scroll continua leve no mobile?
 - Nao ha delays longos, bounce exagerado ou efeitos gratuitos?
 - A animacao melhora percepcao de qualidade sem virar ruído?
-
