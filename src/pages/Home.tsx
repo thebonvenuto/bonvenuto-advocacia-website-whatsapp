@@ -97,6 +97,7 @@ export default function Home() {
                 className="flex justify-center lg:justify-start"
               >
                 <a
+                  id="consulta-cta-hero-home"
                   href={CONTACT_INFO.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -288,6 +289,7 @@ export default function Home() {
                 Converse com nossa equipe e receba o amparo necessário para o seu momento.
               </p>
               <a
+                id="consulta-cta-final-home"
                 href={CONTACT_INFO.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"

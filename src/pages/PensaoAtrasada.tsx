@@ -9,6 +9,7 @@ export default function PensaoAtrasada() {
       subtitle="A segurança financeira do seu filho não pode esperar. Atuamos com agilidade para garantir o cumprimento imediato do dever alimentar e a tranquilidade da sua família."
       heroImage={pensaoAtrasadaHeroImage}
       heroPrimaryButtonText="Falar com um Especialista"
+      heroPrimaryButtonId="consulta-cta-hero-pensao-atrasada"
       description="Quando a pensão não é paga, existem mecanismos legais para garantir o recebimento. Atuamos com estratégias eficazes para recuperar valores em atraso, buscando assegurar o amparo que é de direito do seu filho."
       quote="A prioridade é o futuro."
       situationsTitle="Quando buscar orientação?"
@@ -35,6 +36,7 @@ export default function PensaoAtrasada() {
       ]}
       howItWorksTitle="Como funciona o processo"
       howItWorksSubtitle="Nosso método prioriza a clareza e a segurança do seu direito."
+      showHowItWorksVisual={false}
       howItWorks={[
         {
           title: 'Intimação Judicial',
@@ -68,6 +70,10 @@ export default function PensaoAtrasada() {
       finalCtaTitle={<>Recupere a segurança <br />financeira da sua <br />família.</>}
       finalCtaSubtitle="Estamos prontos para analisar seu caso com a agilidade e o cuidado que o direito do seu filho exige."
       finalCtaButtonText="Falar com um Especialista no WhatsApp"
+      finalCtaButtonId="consulta-cta-final-pensao-atrasada"
     />
   );
 }
+
+
+

@@ -10,6 +10,7 @@ export default function RevisaoPensao() {
       subtitle="A vida muda e as necessidades também. Quando o equilíbrio financeiro se altera, a lei permite o ajuste do valor da pensão para garantir a dignidade de quem recebe e a viabilidade de quem paga."
       heroImage={revisaoPensaoHeroImage}
       heroPrimaryButtonText="Falar com um Especialista"
+      heroPrimaryButtonId="consulta-cta-hero-revisao-pensao"
       heroSecondaryButtonText="Entender Situações"
       description="O valor da pensão alimentícia deve refletir a realidade atual. Seja pelo aumento das necessidades do seu filho ou pela mudança na condição financeira de quem paga, a revisão judicial é o caminho para restabelecer um equilíbrio justo e adequado."
       quote="O equilíbrio é a base da justiça."
@@ -92,6 +93,7 @@ export default function RevisaoPensao() {
       finalCtaTitle={<>Assegure o equilíbrio <br />financeiro da sua <br />família.</>}
       finalCtaSubtitle="Converse com nossos especialistas para entender como regularizar o valor da pensão de forma justa e segura."
       finalCtaButtonText="Falar com um Especialista no WhatsApp"
+      finalCtaButtonId="consulta-cta-final-revisao-pensao"
     />
   );
 }

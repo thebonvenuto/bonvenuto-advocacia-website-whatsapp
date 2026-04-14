@@ -10,6 +10,7 @@ export default function GuardaConvivencia() {
       subtitle="Atuamos com discrição e foco no bem-estar da criança, garantindo que o vínculo afetivo seja preservado com total segurança jurídica."
       heroImage={guardaConvivenciaHeroImage}
       heroPrimaryButtonText="Falar com um Especialista"
+      heroPrimaryButtonId="consulta-cta-hero-guarda-convivencia"
       heroPrimaryButtonVariant="black"
       description="A guarda é, acima de tudo, uma responsabilidade compartilhada. Atuamos para definir regimes de convivência que respeitem os laços afetivos e garantam a estabilidade emocional da criança, buscando sempre o melhor para o seu desenvolvimento."
       quote="A prioridade é sempre o superior interesse do menor."
@@ -36,6 +37,7 @@ export default function GuardaConvivencia() {
           variant: 'white'
         }
       ]}
+      showHowItWorksVisual={false}
       faqTitle="Dúvidas Frequentes"
       faqSubtitle="Respostas fundamentais para o seu primeiro contato."
       faq={[
@@ -62,6 +64,7 @@ export default function GuardaConvivencia() {
               Converse conosco para entender os caminhos legais para regularizar a convivência e a guarda.
             </p>
             <a
+              id="consulta-cta-faq-guarda-convivencia"
               href={CONTACT_INFO.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -80,6 +83,9 @@ export default function GuardaConvivencia() {
       finalCtaTitle={<>Assegure o direito de <br />convivência do seu filho.</>}
       finalCtaSubtitle="Estamos prontos para orientar seus próximos passos com discrição e foco no bem-estar da sua família."
       finalCtaButtonText="Falar com um Especialista no WhatsApp"
+      finalCtaButtonId="consulta-cta-final-guarda-convivencia"
     />
   );
 }
+
+

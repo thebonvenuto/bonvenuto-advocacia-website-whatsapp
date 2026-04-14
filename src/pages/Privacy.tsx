@@ -121,6 +121,7 @@ export default function Privacy() {
               className="absolute -top-6 right-10 z-20 hidden lg:block"
             >
               <a 
+                id="consulta-cta-meio-privacidade"
                 href={CONTACT_INFO.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"

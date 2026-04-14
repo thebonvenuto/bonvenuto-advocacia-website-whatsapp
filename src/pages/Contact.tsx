@@ -83,6 +83,7 @@ export default function Contact() {
               {contactInfo.map((item, i) => (
                 <a
                   key={i}
+                  id={item.highlight ? 'consulta-cta-hero-contato' : undefined}
                   href={item.link}
                   className={`group p-10 rounded-[40px] border transition-all duration-500 ${
                     item.highlight 
@@ -121,6 +122,7 @@ export default function Contact() {
                 </p>
 
                 <a
+                  id="consulta-cta-meio-contato"
                   href={CONTACT_INFO.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -150,6 +152,7 @@ export default function Contact() {
       <FinalCTA 
         title="Prefere nos enviar uma mensagem?"
         subtitle="Envie um e-mail com um breve resumo da sua situação e retornaremos o contato em breve."
+        ctaId="consulta-cta-final-contato"
       />
     </div>
   );

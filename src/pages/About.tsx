@@ -144,6 +144,7 @@ export default function About() {
               className="absolute -top-6 -right-4 lg:-right-6 z-20"
             >
               <a 
+                id="consulta-cta-meio-sobre"
                 href={CONTACT_INFO.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -240,6 +241,7 @@ export default function About() {
             </p>
             
             <a
+              id="consulta-cta-final-sobre"
               href={CONTACT_INFO.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"

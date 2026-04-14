@@ -198,6 +198,7 @@ export default function FAQ() {
             </div>
             
             <a
+              id="consulta-cta-faq"
               href={CONTACT_INFO.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"

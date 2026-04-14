@@ -8,6 +8,7 @@ export default function WhatsAppButton() {
     <>
       {/* Desktop Floating Button */}
       <motion.a
+        id="consulta-cta-meio"
         initial={{ scale: 0.92, opacity: 0, y: 20 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         whileHover={{ scale: 1.03, y: -3 }}
@@ -27,6 +28,7 @@ export default function WhatsAppButton() {
       {/* Mobile Sticky CTA */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-t from-brand-offwhite via-brand-offwhite/90 to-transparent">
         <motion.a
+          id="consulta-cta-sticky-mobile"
           initial={{ y: 44, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           whileTap={{ scale: 0.985 }}

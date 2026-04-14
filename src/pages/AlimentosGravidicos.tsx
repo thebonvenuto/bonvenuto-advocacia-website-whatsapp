@@ -11,6 +11,7 @@ export default function AlimentosGravidicos() {
       subtitle="A gestação é um momento que exige cuidado e segurança. Os alimentos gravídicos garantem que os custos do pré-natal ao parto sejam compartilhados, protegendo a sua saúde e o futuro do seu bebê."
       heroImage={alimentosGravidicosHeroImage}
       heroPrimaryButtonText="Falar com um Especialista"
+      heroPrimaryButtonId="consulta-cta-hero-alimentos-gravidicos"
       description="A proteção ao seu filho começa antes mesmo do nascimento. Os alimentos gravídicos são recursos destinados a cobrir as despesas essenciais da gestação, garantindo assistência médica, alimentação e o amparo necessário para você e seu bebê."
       quote="Segurança - Garantimos que seus direitos sejam respeitados desde o primeiro mês."
       situationsTitle="Quando buscar orientação?"
@@ -89,6 +90,7 @@ export default function AlimentosGravidicos() {
       finalCtaTitle={<>Proteja a sua gestação e o futuro do seu bebê.</>}
       finalCtaSubtitle="Estamos prontos para oferecer o amparo jurídico acolhedor e especializado que este momento único exige."
       finalCtaButtonText="Falar com um Especialista no WhatsApp"
+      finalCtaButtonId="consulta-cta-final-alimentos-gravidicos"
     />
   );
 }

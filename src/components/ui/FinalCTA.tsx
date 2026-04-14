@@ -4,11 +4,13 @@ import { CONTACT_INFO } from '../../constants';
 interface FinalCTAProps {
   title?: string;
   subtitle?: string;
+  ctaId?: string;
 }
 
-export default function FinalCTA({ 
+export default function FinalCTA({
   title = "Não deixe para depois o que é direito do seu filho.",
-  subtitle = "Estamos prontos para ouvir sua história e oferecer o caminho jurídico mais seguro e humano."
+  subtitle = "Estamos prontos para ouvir sua história e oferecer o caminho jurídico mais seguro e humano.",
+  ctaId,
 }: FinalCTAProps) {
   return (
     <section className="section-padding bg-brand-navy relative overflow-hidden">
@@ -21,6 +23,7 @@ export default function FinalCTA({
             {subtitle}
           </p>
           <a
+            id={ctaId}
             href={CONTACT_INFO.whatsappLink}
             target="_blank"
             rel="noopener noreferrer"

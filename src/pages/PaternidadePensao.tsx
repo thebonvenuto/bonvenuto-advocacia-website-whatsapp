@@ -11,6 +11,7 @@ export default function PaternidadePensao() {
       subtitle="Assegurar os direitos do seu filho exige cuidado e excelência jurídica. Atuamos para que o reconhecimento e o suporte financeiro sejam estabelecidos com a dignidade que sua família merece."
       heroImage={paternidadePensaoHeroImage}
       heroPrimaryButtonText="Falar com um Especialista"
+      heroPrimaryButtonId="consulta-cta-hero-paternidade-pensao"
       description="O reconhecimento de paternidade é um direito fundamental. Ele assegura à criança não apenas o nome no registro, mas o acesso a direitos essenciais e ao amparo financeiro necessário para o seu desenvolvimento."
       quote="Garantir o amparo é o primeiro passo para um futuro seguro."
       situationsTitle="Quando buscar orientação?"
@@ -83,6 +84,7 @@ export default function PaternidadePensao() {
       finalCtaTitle={<>Assegure os direitos do <br />seu filho.</>}
       finalCtaSubtitle="Clique abaixo para iniciar um atendimento acolhedor e entender como podemos ajudar você e seu filho."
       finalCtaButtonText="Falar com um Especialista no WhatsApp"
+      finalCtaButtonId="consulta-cta-final-paternidade-pensao"
     />
   );
 }

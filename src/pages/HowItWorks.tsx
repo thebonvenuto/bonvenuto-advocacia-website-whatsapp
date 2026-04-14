@@ -215,6 +215,7 @@ export default function HowItWorks() {
             </p>
             
             <a
+              id="consulta-cta-final-como-funciona"
               href={CONTACT_INFO.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"

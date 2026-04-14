@@ -28,6 +28,7 @@ interface ServiceLayoutProps {
   subtitle: React.ReactNode;
   heroImage: string;
   heroPrimaryButtonText?: string;
+  heroPrimaryButtonId?: string;
   heroPrimaryButtonVariant?: 'gold' | 'black';
   heroSecondaryButtonText?: string;
   heroSecondaryButtonHref?: string;
@@ -43,6 +44,7 @@ interface ServiceLayoutProps {
   howItWorks?: { title: string; desc: string }[];
   howItWorksChecklist?: string[];
   howItWorksImage?: React.ReactNode;
+  showHowItWorksVisual?: boolean;
   faqTitle?: string;
   faqSubtitle?: string;
   faqBg?: 'offwhite' | 'navy';
@@ -51,6 +53,7 @@ interface ServiceLayoutProps {
   finalCtaTitle?: React.ReactNode;
   finalCtaSubtitle?: string;
   finalCtaButtonText?: string;
+  finalCtaButtonId?: string;
 }
 
 export default function ServiceLayout({
@@ -58,6 +61,7 @@ export default function ServiceLayout({
   subtitle,
   heroImage,
   heroPrimaryButtonText = "Regularizar Pensão Agora",
+  heroPrimaryButtonId,
   heroPrimaryButtonVariant = 'gold',
   heroSecondaryButtonText,
   heroSecondaryButtonHref = "#",
@@ -73,6 +77,7 @@ export default function ServiceLayout({
   howItWorks,
   howItWorksChecklist,
   howItWorksImage,
+  showHowItWorksVisual = true,
   faqTitle = "Dúvidas Frequentes",
   faqSubtitle = "Respostas fundamentais para o seu primeiro contato.",
   faqBg = 'offwhite',
@@ -80,7 +85,8 @@ export default function ServiceLayout({
   faqSideCard,
   finalCtaTitle = <>Pronto para garantir <br />os direitos do seu <br />filho?</>,
   finalCtaSubtitle = "Não deixe para amanhã uma segurança que é de direito hoje. Nossa equipe está pronta para orientar seu próximo passo com discrição e excelência.",
-  finalCtaButtonText = "Falar com um advogado"
+  finalCtaButtonText = "Falar com um advogado",
+  finalCtaButtonId
 }: ServiceLayoutProps) {
   return (
     <div className="overflow-hidden bg-brand-offwhite">
@@ -123,6 +129,7 @@ export default function ServiceLayout({
                 className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4"
               >
                 <a
+                  id={heroPrimaryButtonId}
                   href={CONTACT_INFO.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -236,20 +243,21 @@ export default function ServiceLayout({
 
       {/* Process Section */}
       <Section bg="offwhite" className="!py-20 lg:!py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
+        <div className={showHowItWorksVisual ? "grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center" : "max-w-4xl mx-auto"}>
           
           {/* Left: Image */}
-          <motion.div
-            variants={contentReveal}
-            initial="hidden"
-            whileInView="visible"
-            viewport={revealViewport}
-            className="lg:col-span-5 relative order-2 lg:order-1"
-          >
-             {howItWorksImage ? (
-               howItWorksImage
-             ) : (
-               <div className="aspect-square bg-[#111827] rounded-2xl flex items-center justify-center premium-shadow relative z-10 overflow-hidden max-w-sm mx-auto lg:max-w-none">
+          {showHowItWorksVisual && (
+            <motion.div
+              variants={contentReveal}
+              initial="hidden"
+              whileInView="visible"
+              viewport={revealViewport}
+              className="lg:col-span-5 relative order-2 lg:order-1"
+            >
+              {howItWorksImage ? (
+                howItWorksImage
+              ) : (
+                <div className="aspect-square bg-[#111827] rounded-2xl flex items-center justify-center premium-shadow relative z-10 overflow-hidden max-w-sm mx-auto lg:max-w-none">
                   {/* Abstract graphic representation */}
                   <div className="relative w-32 lg:w-48 h-32 lg:h-48">
                     <div className="absolute inset-0 bg-brand-navy rounded-full shadow-inner" />
@@ -257,14 +265,15 @@ export default function ServiceLayout({
                     <div className="absolute bottom-1/4 right-1/4 w-6 lg:w-8 h-6 lg:h-8 bg-brand-gold rounded-full shadow-lg" />
                     <div className="absolute top-1/2 right-1/3 w-12 lg:w-16 h-12 lg:h-16 bg-brand-gold rounded-full shadow-lg" />
                   </div>
-               </div>
-             )}
-             {/* Decorative offset square */}
-             <div className="absolute -top-6 -right-6 lg:-top-8 lg:-right-8 w-full h-full border border-brand-gold/20 rounded-2xl z-0 hidden md:block" />
-          </motion.div>
+                </div>
+              )}
+              {/* Decorative offset square */}
+              <div className="absolute -top-6 -right-6 lg:-top-8 lg:-right-8 w-full h-full border border-brand-gold/20 rounded-2xl z-0 hidden md:block" />
+            </motion.div>
+          )}
 
           {/* Right: Steps or Checklist */}
-          <div className="lg:col-span-7 order-1 lg:order-2 text-center lg:text-left">
+          <div className={showHowItWorksVisual ? "lg:col-span-7 order-1 lg:order-2 text-center lg:text-left" : "text-center lg:text-left"}>
             <motion.div
               variants={sectionIntro}
               initial="hidden"
@@ -379,6 +388,7 @@ export default function ServiceLayout({
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <a
+                  id={finalCtaButtonId}
                   href={CONTACT_INFO.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -386,12 +396,6 @@ export default function ServiceLayout({
                 >
                   <MessageCircle size={18} className="mr-3" />
                   {finalCtaButtonText}
-                </a>
-                <a
-                  href="#"
-                  className="bg-transparent border border-white/20 text-white text-sm px-8 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-white/5 motion-safe:hover:-translate-y-0.5 transition-all text-center w-full sm:w-auto"
-                >
-                  Agendar Reunião
                 </a>
               </div>
             </div>
@@ -406,3 +410,7 @@ export default function ServiceLayout({
     </div>
   );
 }
+
+
+
+
