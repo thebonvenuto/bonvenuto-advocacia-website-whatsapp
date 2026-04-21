@@ -1,0 +1,16 @@
+<IfModule mod_negotiation.c>
+  Options -MultiViews
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve existing files/directories directly.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # SPA fallback: route every other request to index.html.
+  RewriteRule ^ index.html [L,QSA]
+</IfModule>
