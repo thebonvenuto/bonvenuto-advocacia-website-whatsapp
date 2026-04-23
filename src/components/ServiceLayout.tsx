@@ -5,10 +5,6 @@ import Section from './ui/Section';
 import Accordion from './ui/Accordion';
 import { CONTACT_INFO } from '../constants';
 import {
-  heroGroup,
-  heroItem,
-  imageReveal,
-  floatingAccent,
   sectionIntro,
   staggerGroup,
   cardReveal,
@@ -29,6 +25,8 @@ interface ServiceLayoutProps {
   heroImage: string;
   heroImageMobile?: string;
   heroImageDesktop?: string;
+  heroImageWebpMobile?: string;
+  heroImageWebpDesktop?: string;
   heroPrimaryButtonText?: string;
   heroPrimaryButtonId?: string;
   heroPrimaryButtonVariant?: 'gold' | 'black';
@@ -64,31 +62,33 @@ export default function ServiceLayout({
   heroImage,
   heroImageMobile,
   heroImageDesktop,
-  heroPrimaryButtonText = "Regularizar Pensão Agora",
+  heroImageWebpMobile,
+  heroImageWebpDesktop,
+  heroPrimaryButtonText = "Regularizar PensÃ£o Agora",
   heroPrimaryButtonId,
   heroPrimaryButtonVariant = 'gold',
   heroSecondaryButtonText,
   heroSecondaryButtonHref = "#",
   description,
-  quote = "A dignidade da criança é o nosso compromisso inegociável.",
+  quote = "A dignidade da crianÃ§a Ã© o nosso compromisso inegociÃ¡vel.",
   quoteIcon,
-  situationsTitle = "Cenários Comuns",
-  situationsSubtitle = "Muitas famílias enfrentam incertezas antes de buscar auxílio jurídico. Identifique se o seu caso se enquadra em uma destas situações.",
+  situationsTitle = "CenÃ¡rios Comuns",
+  situationsSubtitle = "Muitas famÃ­lias enfrentam incertezas antes de buscar auxÃ­lio jurÃ­dico. Identifique se o seu caso se enquadra em uma destas situaÃ§Ãµes.",
   situations,
   extraSituationCard,
   howItWorksTitle = "Como funciona a jornada",
-  howItWorksSubtitle = "Nosso método prioriza a clareza e a segurança do seu direito.",
+  howItWorksSubtitle = "Nosso mÃ©todo prioriza a clareza e a seguranÃ§a do seu direito.",
   howItWorks,
   howItWorksChecklist,
   howItWorksImage,
   showHowItWorksVisual = true,
-  faqTitle = "Dúvidas Frequentes",
+  faqTitle = "DÃºvidas Frequentes",
   faqSubtitle = "Respostas fundamentais para o seu primeiro contato.",
   faqBg = 'offwhite',
   faq,
   faqSideCard,
   finalCtaTitle = <>Pronto para garantir <br />os direitos do seu <br />filho?</>,
-  finalCtaSubtitle = "Não deixe para amanhã uma segurança que é de direito hoje. Nossa equipe está pronta para orientar seu próximo passo com discrição e excelência.",
+  finalCtaSubtitle = "NÃ£o deixe para amanhÃ£ uma seguranÃ§a que Ã© de direito hoje. Nossa equipe estÃ¡ pronta para orientar seu prÃ³ximo passo com discriÃ§Ã£o e excelÃªncia.",
   finalCtaButtonText = "Falar com um advogado",
   finalCtaButtonId
 }: ServiceLayoutProps) {
@@ -99,39 +99,22 @@ export default function ServiceLayout({
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
             {/* Left Content */}
-            <motion.div
-              variants={heroGroup}
-              initial="hidden"
-              animate="visible"
-              className="max-w-2xl z-10 text-center lg:text-left"
-            >
-              <motion.div
-                variants={heroItem}
-                className="mb-6 inline-block border border-brand-gold/20 rounded-full px-4 py-1"
-              >
+            <div className="max-w-2xl z-10 text-center lg:text-left">
+              <div className="mb-6 inline-block border border-brand-gold/20 rounded-full px-4 py-1">
                 <span className="text-brand-graphite/50 font-bold tracking-[0.2em] uppercase text-[10px]">
                   Direito de Família Especializado
                 </span>
-              </motion.div>
+              </div>
 
-              <motion.h1
-                variants={heroItem}
-                className="text-4xl md:text-7xl lg:text-[5.5rem] font-serif text-brand-navy leading-[1.1] mb-6 lg:mb-8"
-              >
+              <h1 className="text-4xl md:text-7xl lg:text-[5.5rem] font-serif text-brand-navy leading-[1.1] mb-6 lg:mb-8">
                 {title}
-              </motion.h1>
+              </h1>
               
-              <motion.p
-                variants={heroItem}
-                className="text-base md:text-xl text-brand-graphite/70 leading-relaxed mb-8 lg:mb-10 max-w-lg mx-auto lg:mx-0"
-              >
+              <p className="text-base md:text-xl text-brand-graphite/70 leading-relaxed mb-8 lg:mb-10 max-w-lg mx-auto lg:mx-0">
                 {subtitle}
-              </motion.p>
+              </p>
               
-              <motion.div
-                variants={heroItem}
-                className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4"
-              >
+              <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                 <a
                   id={heroPrimaryButtonId}
                   href={CONTACT_INFO.whatsappLink}
@@ -150,20 +133,17 @@ export default function ServiceLayout({
                     {heroSecondaryButtonText}
                   </a>
                 )}
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
             {/* Right Image */}
-            <motion.div 
-              variants={imageReveal}
-              initial="hidden"
-              animate="visible"
-              className="relative lg:ml-auto w-full max-w-sm mx-auto lg:max-w-none mt-12 lg:mt-0"
-            >
+            <div className="relative lg:ml-auto w-full max-w-sm mx-auto lg:max-w-none mt-12 lg:mt-0">
               <div className="aspect-[4/5] rounded-tl-[60px] rounded-br-[60px] lg:rounded-tl-[100px] lg:rounded-br-[100px] overflow-hidden premium-shadow relative z-0">
                 <picture className="block w-full h-full">
                   {heroImageDesktop && <source srcSet={heroImageDesktop} media="(min-width: 768px)" type="image/avif" />}
                   {heroImageMobile && <source srcSet={heroImageMobile} type="image/avif" />}
+                  {heroImageWebpDesktop && <source srcSet={heroImageWebpDesktop} media="(min-width: 768px)" type="image/webp" />}
+                  {heroImageWebpMobile && <source srcSet={heroImageWebpMobile} type="image/webp" />}
                   <img
                     src={heroImage}
                     alt="Servico Juridico"
@@ -179,12 +159,7 @@ export default function ServiceLayout({
               </div>
               
               {/* Floating Quote Card */}
-              <motion.div
-                variants={floatingAccent}
-                initial="hidden"
-                animate="visible"
-                className="absolute -bottom-6 -left-4 lg:-bottom-8 lg:-left-16 bg-white p-6 lg:p-8 premium-shadow z-10 max-w-[240px] lg:max-w-[280px]"
-              >
+              <div className="absolute -bottom-6 -left-4 lg:-bottom-8 lg:-left-16 bg-white p-6 lg:p-8 premium-shadow z-10 max-w-[240px] lg:max-w-[280px]">
                 {quoteIcon && <div className="text-brand-gold mb-3 lg:mb-4">{quoteIcon}</div>}
                 <p className="font-serif text-lg lg:text-xl text-brand-navy italic leading-snug mb-3 lg:mb-4">
                   "{quote}"
@@ -192,12 +167,11 @@ export default function ServiceLayout({
                 <p className="text-[9px] lg:text-[10px] text-brand-graphite/40 uppercase tracking-widest font-bold">
                   Assessoria Jurídica Premium
                 </p>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
       {/* Situations Section */}
       <Section bg="offwhite" className="!py-20 lg:!py-32">
         <motion.div
@@ -423,6 +397,7 @@ export default function ServiceLayout({
     </div>
   );
 }
+
 
 
 

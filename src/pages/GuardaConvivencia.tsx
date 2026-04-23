@@ -3,59 +3,63 @@ import { Ban, ListChecks, AlertTriangle, ShieldCheck, MessageCircle } from 'luci
 import { CONTACT_INFO } from '../constants';
 import guardaConvivenciaHeroImage from '../assets/Guarda e Conviv\u00eancia hero (2).png';
 import guardaConvivenciaHeroMobile from '../assets/optimized/hero-guarda-convivencia-mobile.avif';
+import guardaConvivenciaHeroMobileWebp from '../assets/optimized/hero-guarda-convivencia-mobile.webp';
 import guardaConvivenciaHeroDesktop from '../assets/optimized/hero-guarda-convivencia-desktop.avif';
+import guardaConvivenciaHeroDesktopWebp from '../assets/optimized/hero-guarda-convivencia-desktop.webp';
 
 export default function GuardaConvivencia() {
   return (
     <ServiceLayout
-      title={<>Segurança jurídica para a <span className="italic">convivência</span> e a guarda do seu filho.</>}
-      subtitle="Atuamos com discrição e foco no bem-estar da criança, garantindo que o vínculo afetivo seja preservado com total segurança jurídica."
+      title={<>SeguranÃƒÆ’Ã‚Â§a jurÃƒÆ’Ã‚Â­dica para a <span className="italic">convivÃƒÆ’Ã‚Âªncia</span> e a guarda do seu filho.</>}
+      subtitle="Atuamos com discriÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o e foco no bem-estar da crianÃƒÆ’Ã‚Â§a, garantindo que o vÃƒÆ’Ã‚Â­nculo afetivo seja preservado com total seguranÃƒÆ’Ã‚Â§a jurÃƒÆ’Ã‚Â­dica."
       heroImage={guardaConvivenciaHeroImage}
       heroImageMobile={guardaConvivenciaHeroMobile}
       heroImageDesktop={guardaConvivenciaHeroDesktop}
+      heroImageWebpMobile={guardaConvivenciaHeroMobileWebp}
+      heroImageWebpDesktop={guardaConvivenciaHeroDesktopWebp}
       heroPrimaryButtonText="Falar com um Especialista"
       heroPrimaryButtonId="consulta-cta-hero-guarda-convivencia"
       heroPrimaryButtonVariant="black"
-      description="A guarda é, acima de tudo, uma responsabilidade compartilhada. Atuamos para definir regimes de convivência que respeitem os laços afetivos e garantam a estabilidade emocional da criança, buscando sempre o melhor para o seu desenvolvimento."
-      quote="A prioridade é sempre o superior interesse do menor."
+      description="A guarda ÃƒÆ’Ã‚Â©, acima de tudo, uma responsabilidade compartilhada. Atuamos para definir regimes de convivÃƒÆ’Ã‚Âªncia que respeitem os laÃƒÆ’Ã‚Â§os afetivos e garantam a estabilidade emocional da crianÃƒÆ’Ã‚Â§a, buscando sempre o melhor para o seu desenvolvimento."
+      quote="A prioridade ÃƒÆ’Ã‚Â© sempre o superior interesse do menor."
       quoteIcon={<ShieldCheck size={24} />}
-      situationsTitle="Quando buscar orientação?"
-      situationsSubtitle="Identifique se você está vivenciando uma destas situações e precisa de suporte jurídico especializado."
+      situationsTitle="Quando buscar orientaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o?"
+      situationsSubtitle="Identifique se vocÃƒÆ’Ã‚Âª estÃƒÆ’Ã‚Â¡ vivenciando uma destas situaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Âµes e precisa de suporte jurÃƒÆ’Ã‚Â­dico especializado."
       situations={[
         {
-          title: 'Dificuldade de Convivência',
-          desc: 'Quando o contato com o filho é impedido ou dificultado sem justificativa, ferindo o direito da criança.',
+          title: 'Dificuldade de ConvivÃƒÆ’Ã‚Âªncia',
+          desc: 'Quando o contato com o filho ÃƒÆ’Ã‚Â© impedido ou dificultado sem justificativa, ferindo o direito da crianÃƒÆ’Ã‚Â§a.',
           icon: <Ban size={24} />,
           variant: 'white'
         },
         {
-          title: 'Falta de Regulamentação',
-          desc: 'A ausência de uma decisão judicial gera insegurança e conflitos sobre horários e responsabilidades.',
+          title: 'Falta de RegulamentaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o',
+          desc: 'A ausÃƒÆ’Ã‚Âªncia de uma decisÃƒÆ’Ã‚Â£o judicial gera inseguranÃƒÆ’Ã‚Â§a e conflitos sobre horÃƒÆ’Ã‚Â¡rios e responsabilidades.',
           icon: <ListChecks size={24} />,
           variant: 'white'
         },
         {
-          title: 'Necessidade de Revisão',
-          desc: 'Situações que demandam a alteração da guarda para garantir a proteção e o bem-estar do menor.',
+          title: 'Necessidade de RevisÃƒÆ’Ã‚Â£o',
+          desc: 'SituaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Âµes que demandam a alteraÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o da guarda para garantir a proteÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o e o bem-estar do menor.',
           icon: <AlertTriangle size={24} />,
           variant: 'white'
         }
       ]}
       showHowItWorksVisual={false}
-      faqTitle="Dúvidas Frequentes"
+      faqTitle="DÃƒÆ’Ã‚Âºvidas Frequentes"
       faqSubtitle="Respostas fundamentais para o seu primeiro contato."
       faq={[
         { 
           q: 'Como funciona o processo de guarda?', 
-          a: 'O processo define a residência da criança e como as decisões sobre sua vida serão tomadas, priorizando sempre o seu bem-estar físico e emocional.' 
+          a: 'O processo define a residÃƒÆ’Ã‚Âªncia da crianÃƒÆ’Ã‚Â§a e como as decisÃƒÆ’Ã‚Âµes sobre sua vida serÃƒÆ’Ã‚Â£o tomadas, priorizando sempre o seu bem-estar fÃƒÆ’Ã‚Â­sico e emocional.' 
         },
         { 
-          q: 'E se não houver acordo entre os pais?', 
-          a: 'Na ausência de acordo, a decisão é tomada com base em avaliações profissionais, buscando sempre a solução que melhor atenda aos interesses da criança.' 
+          q: 'E se nÃƒÆ’Ã‚Â£o houver acordo entre os pais?', 
+          a: 'Na ausÃƒÆ’Ã‚Âªncia de acordo, a decisÃƒÆ’Ã‚Â£o ÃƒÆ’Ã‚Â© tomada com base em avaliaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Âµes profissionais, buscando sempre a soluÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o que melhor atenda aos interesses da crianÃƒÆ’Ã‚Â§a.' 
         },
         { 
           q: 'O que define o interesse do menor?', 
-          a: 'São considerados fatores como estabilidade emocional, rotina escolar e a capacidade de cada genitor em oferecer um ambiente saudável e seguro.' 
+          a: 'SÃƒÆ’Ã‚Â£o considerados fatores como estabilidade emocional, rotina escolar e a capacidade de cada genitor em oferecer um ambiente saudÃƒÆ’Ã‚Â¡vel e seguro.' 
         }
       ]}
       faqSideCard={
@@ -65,7 +69,7 @@ export default function GuardaConvivencia() {
               Proteja o bem-estar do seu filho
             </h2>
             <p className="text-white/60 text-base mb-10 leading-relaxed">
-              Converse conosco para entender os caminhos legais para regularizar a convivência e a guarda.
+              Converse conosco para entender os caminhos legais para regularizar a convivÃƒÆ’Ã‚Âªncia e a guarda.
             </p>
             <a
               id="consulta-cta-faq-guarda-convivencia"
@@ -84,8 +88,8 @@ export default function GuardaConvivencia() {
           </div>
         </div>
       }
-      finalCtaTitle={<>Assegure o direito de <br />convivência do seu filho.</>}
-      finalCtaSubtitle="Estamos prontos para orientar seus próximos passos com discrição e foco no bem-estar da sua família."
+      finalCtaTitle={<>Assegure o direito de <br />convivÃƒÆ’Ã‚Âªncia do seu filho.</>}
+      finalCtaSubtitle="Estamos prontos para orientar seus prÃƒÆ’Ã‚Â³ximos passos com discriÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o e foco no bem-estar da sua famÃƒÆ’Ã‚Â­lia."
       finalCtaButtonText="Falar com um Especialista no WhatsApp"
       finalCtaButtonId="consulta-cta-final-guarda-convivencia"
     />

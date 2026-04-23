@@ -7,11 +7,9 @@ import { CONTACT_INFO } from '../constants';
 import drCarloImage from '../assets/Foto Carlo1.jpg';
 import heroHomeMobile from '../assets/optimized/hero-home-mobile.avif';
 import heroHomeDesktop from '../assets/optimized/hero-home-desktop.avif';
+import heroHomeMobileWebp from '../assets/optimized/hero-home-mobile.webp';
+import heroHomeDesktopWebp from '../assets/optimized/hero-home-desktop.webp';
 import {
-  heroGroup,
-  heroItem,
-  imageReveal,
-  floatingAccent,
   sectionIntro,
   staggerGroup,
   cardReveal,
@@ -74,30 +72,16 @@ export default function Home() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
             {/* Left Content */}
-            <motion.div
-              variants={heroGroup}
-              initial="hidden"
-              animate="visible"
-              className="max-w-2xl z-10 text-center lg:text-left"
-            >
-              <motion.h1
-                variants={heroItem}
-                className="text-4xl md:text-7xl lg:text-[5.5rem] font-serif text-brand-navy leading-[1.1] mb-6 lg:mb-8"
-              >
+            <div className="max-w-2xl z-10 text-center lg:text-left">
+              <h1 className="text-4xl md:text-7xl lg:text-[5.5rem] font-serif text-brand-navy leading-[1.1] mb-6 lg:mb-8">
                 Proteção jurídica e acolhimento para o que você tem de <span className="text-brand-gold italic">mais precioso.</span>
-              </motion.h1>
+              </h1>
               
-              <motion.p
-                variants={heroItem}
-                className="text-base md:text-xl text-brand-graphite/70 leading-relaxed mb-8 lg:mb-10 max-w-lg mx-auto lg:mx-0"
-              >
+              <p className="text-base md:text-xl text-brand-graphite/70 leading-relaxed mb-8 lg:mb-10 max-w-lg mx-auto lg:mx-0">
                 Entenda seus direitos com clareza e receba o amparo necessário para atravessar este momento com segurança e tranquilidade.
-              </motion.p>
+              </p>
               
-              <motion.div
-                variants={heroItem}
-                className="flex justify-center lg:justify-start"
-              >
+              <div className="flex justify-center lg:justify-start">
                 <a
                   id="consulta-cta-hero-home"
                   href={CONTACT_INFO.whatsappLink}
@@ -108,20 +92,17 @@ export default function Home() {
                   <MessageCircle size={20} className="mr-3" />
                   Falar com um especialista no WhatsApp
                 </a>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
             {/* Right Image */}
-            <motion.div 
-              variants={imageReveal}
-              initial="hidden"
-              animate="visible"
-              className="relative lg:ml-auto w-full max-w-sm mx-auto lg:max-w-none mt-12 lg:mt-0"
-            >
+            <div className="relative lg:ml-auto w-full max-w-sm mx-auto lg:max-w-none mt-12 lg:mt-0">
               <div className="aspect-[3/4] lg:aspect-[4/5] rounded-t-[120px] lg:rounded-t-[200px] overflow-hidden premium-shadow relative z-0">
                 <picture className="block w-full h-full">
                   <source srcSet={heroHomeDesktop} media="(min-width: 768px)" type="image/avif" />
                   <source srcSet={heroHomeMobile} type="image/avif" />
+                  <source srcSet={heroHomeDesktopWebp} media="(min-width: 768px)" type="image/webp" />
+                  <source srcSet={heroHomeMobileWebp} type="image/webp" />
                   <img
                     src={drCarloImage}
                     alt="Dr. Carlo Bonvenuto"
@@ -137,20 +118,15 @@ export default function Home() {
               </div>
               
               {/* Floating Quote Card */}
-              <motion.div
-                variants={floatingAccent}
-                initial="hidden"
-                animate="visible"
-                className="absolute -bottom-6 -left-4 lg:-bottom-8 lg:-left-16 bg-white p-6 lg:p-8 premium-shadow z-10 max-w-[240px] lg:max-w-[280px]"
-              >
+              <div className="absolute -bottom-6 -left-4 lg:-bottom-8 lg:-left-16 bg-white p-6 lg:p-8 premium-shadow z-10 max-w-[240px] lg:max-w-[280px]">
                 <p className="font-serif text-lg lg:text-xl text-brand-navy italic leading-snug mb-3 lg:mb-4">
                   "A clareza é o primeiro passo para a segurança da sua família."
                 </p>
                 <p className="text-[9px] lg:text-[10px] font-bold text-brand-graphite/50 uppercase tracking-[0.2em]">
                   Especialista em Direito de Família
                 </p>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

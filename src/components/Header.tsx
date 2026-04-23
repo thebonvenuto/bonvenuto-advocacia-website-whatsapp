@@ -57,19 +57,16 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
-            <motion.a
+            <a
               id="consulta-cta-header"
               href={CONTACT_INFO.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-navy text-white px-6 py-2.5 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-brand-navy/90 transition-all premium-shadow"
-              whileHover={{ y: -2, scale: 1.015 }}
-              whileTap={{ scale: 0.985 }}
-              transition={{ duration: 0.22, ease: smoothEase }}
             >
               <MessageCircle size={18} />
               Atendimento
-            </motion.a>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
