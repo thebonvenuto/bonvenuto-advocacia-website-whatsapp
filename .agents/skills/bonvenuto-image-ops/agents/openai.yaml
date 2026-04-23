@@ -1,0 +1,4 @@
+schema_version: "1"
+display_name: "Bonvenuto Image Ops"
+short_description: "Audita, comprime e integra imagens criticas do site com foco em LCP mobile e CLS estavel."
+default_prompt: "Use esta skill para localizar imagens criticas do site Bonvenuto, medir peso e dimensoes, gerar variantes mobile/desktop e integrar assets otimizados sem quebrar tracking, WhatsApp, GTM ou estabilidade visual."
