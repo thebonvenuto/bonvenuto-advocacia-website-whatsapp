@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Section from '../components/ui/Section';
 import Accordion from '../components/ui/Accordion';
 import { CONTACT_INFO } from '../constants';
-import drCarloImage from '../assets/Foto Carlo1.jpg';
 import heroHomeMobile from '../assets/optimized/hero-home-mobile.avif';
 import heroHomeDesktop from '../assets/optimized/hero-home-desktop.avif';
 import heroHomeMobileWebp from '../assets/optimized/hero-home-mobile.webp';
@@ -22,47 +21,47 @@ import {
 export default function Home() {
   const services = [
     {
-      title: 'Pensão Alimentícia',
-      description: 'Asseguramos o suporte financeiro necessário para o desenvolvimento saudável e digno dos seus filhos.',
+      title: 'PensÃ£o AlimentÃ­cia',
+      description: 'Asseguramos o suporte financeiro necessÃ¡rio para o desenvolvimento saudÃ¡vel e digno dos seus filhos.',
       path: '/pensao-alimenticia',
       icon: <Baby size={24} strokeWidth={1.5} />,
     },
     {
-      title: 'Pensão Atrasada',
-      description: 'Regularização de valores em aberto: protegemos o direito ao amparo retroativo com total segurança jurídica.',
+      title: 'PensÃ£o Atrasada',
+      description: 'RegularizaÃ§Ã£o de valores em aberto: protegemos o direito ao amparo retroativo com total seguranÃ§a jurÃ­dica.',
       path: '/pensao-atrasada',
       icon: <Clock size={24} strokeWidth={1.5} />,
     },
     {
-      title: 'Revisão de Pensão',
-      description: 'Ajuste e equilíbrio: adequamos os valores da pensão à realidade atual da sua família.',
+      title: 'RevisÃ£o de PensÃ£o',
+      description: 'Ajuste e equilÃ­brio: adequamos os valores da pensÃ£o Ã  realidade atual da sua famÃ­lia.',
       path: '/revisao-de-pensao',
       icon: <Scale size={24} strokeWidth={1.5} />,
     },
     {
-      title: 'Paternidade e Pensão',
-      description: 'Reconhecimento de vínculo: o direito à identidade e ao suporte financeiro para o seu filho.',
+      title: 'Paternidade e PensÃ£o',
+      description: 'Reconhecimento de vÃ­nculo: o direito Ã  identidade e ao suporte financeiro para o seu filho.',
       path: '/paternidade-e-pensao',
       icon: <Users size={24} strokeWidth={1.5} />,
     },
     {
-      title: 'Alimentos Gravídicos',
-      description: 'Amparo desde o início: suporte financeiro para uma gestação segura e tranquila.',
+      title: 'Alimentos GravÃ­dicos',
+      description: 'Amparo desde o inÃ­cio: suporte financeiro para uma gestaÃ§Ã£o segura e tranquila.',
       path: '/alimentos-gravidicos',
       icon: <Heart size={24} strokeWidth={1.5} />,
     },
     {
-      title: 'Guarda e Convivência',
-      description: 'Preservação de vínculos: organizamos rotinas que priorizam o bem-estar e o convívio familiar.',
+      title: 'Guarda e ConvivÃªncia',
+      description: 'PreservaÃ§Ã£o de vÃ­nculos: organizamos rotinas que priorizam o bem-estar e o convÃ­vio familiar.',
       path: '/guarda-e-convivencia',
       icon: <HeartHandshake size={24} strokeWidth={1.5} />,
     },
   ];
 
   const faqs = [
-    { q: 'Como é calculado o valor da pensão?', a: 'O valor é definido buscando um equilíbrio justo entre as necessidades da criança e a capacidade financeira de quem irá pagar.' },
-    { q: 'E se o pai ou a mãe não tiver carteira assinada?', a: 'A pensão é devida mesmo sem vínculo formal. A justiça pode fixar o valor com base no salário mínimo ou em evidências da capacidade financeira real.' },
-    { q: 'Posso pedir pensão ainda durante a gravidez?', a: 'Sim. Através dos Alimentos Gravídicos, é possível assegurar o suporte financeiro necessário para as despesas da gestação.' },
+    { q: 'Como Ã© calculado o valor da pensÃ£o?', a: 'O valor Ã© definido buscando um equilÃ­brio justo entre as necessidades da crianÃ§a e a capacidade financeira de quem irÃ¡ pagar.' },
+    { q: 'E se o pai ou a mÃ£e nÃ£o tiver carteira assinada?', a: 'A pensÃ£o Ã© devida mesmo sem vÃ­nculo formal. A justiÃ§a pode fixar o valor com base no salÃ¡rio mÃ­nimo ou em evidÃªncias da capacidade financeira real.' },
+    { q: 'Posso pedir pensÃ£o ainda durante a gravidez?', a: 'Sim. AtravÃ©s dos Alimentos GravÃ­dicos, Ã© possÃ­vel assegurar o suporte financeiro necessÃ¡rio para as despesas da gestaÃ§Ã£o.' },
   ];
 
   return (
@@ -74,11 +73,11 @@ export default function Home() {
             {/* Left Content */}
             <div className="max-w-2xl z-10 text-center lg:text-left">
               <h1 className="text-4xl md:text-7xl lg:text-[5.5rem] font-serif text-brand-navy leading-[1.1] mb-6 lg:mb-8">
-                Proteção jurídica e acolhimento para o que você tem de <span className="text-brand-gold italic">mais precioso.</span>
+                ProteÃ§Ã£o jurÃ­dica e acolhimento para o que vocÃª tem de <span className="text-brand-gold italic">mais precioso.</span>
               </h1>
               
               <p className="text-base md:text-xl text-brand-graphite/70 leading-relaxed mb-8 lg:mb-10 max-w-lg mx-auto lg:mx-0">
-                Entenda seus direitos com clareza e receba o amparo necessário para atravessar este momento com segurança e tranquilidade.
+                Entenda seus direitos com clareza e receba o amparo necessÃ¡rio para atravessar este momento com seguranÃ§a e tranquilidade.
               </p>
               
               <div className="flex justify-center lg:justify-start">
@@ -104,7 +103,7 @@ export default function Home() {
                   <source srcSet={heroHomeDesktopWebp} media="(min-width: 768px)" type="image/webp" />
                   <source srcSet={heroHomeMobileWebp} type="image/webp" />
                   <img
-                    src={drCarloImage}
+                    src={heroHomeDesktopWebp}
                     alt="Dr. Carlo Bonvenuto"
                     fetchPriority="high"
                     loading="eager"
@@ -120,10 +119,10 @@ export default function Home() {
               {/* Floating Quote Card */}
               <div className="absolute -bottom-6 -left-4 lg:-bottom-8 lg:-left-16 bg-white p-6 lg:p-8 premium-shadow z-10 max-w-[240px] lg:max-w-[280px]">
                 <p className="font-serif text-lg lg:text-xl text-brand-navy italic leading-snug mb-3 lg:mb-4">
-                  "A clareza é o primeiro passo para a segurança da sua família."
+                  "A clareza Ã© o primeiro passo para a seguranÃ§a da sua famÃ­lia."
                 </p>
                 <p className="text-[9px] lg:text-[10px] font-bold text-brand-graphite/50 uppercase tracking-[0.2em]">
-                  Especialista em Direito de Família
+                  Especialista em Direito de FamÃ­lia
                 </p>
               </div>
             </div>
@@ -141,7 +140,7 @@ export default function Home() {
           className="mb-12 lg:mb-16 text-center lg:text-left"
         >
           <span className="text-brand-graphite/50 font-bold tracking-[0.2em] uppercase text-[10px] mb-3 lg:mb-4 block">Nossa Expertise</span>
-          <h2 className="text-3xl md:text-5xl font-serif text-brand-navy">Como podemos apoiar sua família</h2>
+          <h2 className="text-3xl md:text-5xl font-serif text-brand-navy">Como podemos apoiar sua famÃ­lia</h2>
         </motion.div>
 
         <motion.div
@@ -195,9 +194,9 @@ export default function Home() {
               className="space-y-12 lg:space-y-16 text-left"
             >
               {[
-                { title: 'Acolhimento inicial', desc: 'Conte sua história com total sigilo em uma conversa segura e humanizada.' },
-                { title: 'Orientação transparente', desc: 'Analisamos sua situação e explicamos os caminhos legais de forma simples e direta.' },
-                { title: 'Acompanhamento próximo', desc: 'Esteja a par de cada evolução do seu caso com transparência e agilidade.' }
+                { title: 'Acolhimento inicial', desc: 'Conte sua histÃ³ria com total sigilo em uma conversa segura e humanizada.' },
+                { title: 'OrientaÃ§Ã£o transparente', desc: 'Analisamos sua situaÃ§Ã£o e explicamos os caminhos legais de forma simples e direta.' },
+                { title: 'Acompanhamento prÃ³ximo', desc: 'Esteja a par de cada evoluÃ§Ã£o do seu caso com transparÃªncia e agilidade.' }
               ].map((step, i) => (
                 <motion.div key={i} variants={cardReveal} className="flex gap-6 lg:gap-8 items-start">
                   <span className="font-serif text-4xl lg:text-5xl text-brand-gold italic opacity-60 shrink-0 leading-none pt-1">
@@ -225,9 +224,9 @@ export default function Home() {
               
               <div className="space-y-6 lg:space-y-8">
                 {[
-                  'Especialização exclusiva em Direito das Famílias e na proteção integral da criança.',
-                  'Linguagem acessível: traduzimos o juridiquês para que você tome decisões com segurança.',
-                  'Agilidade digital: resolvemos as etapas burocráticas com eficiência e sem deslocamentos desnecessários.'
+                  'EspecializaÃ§Ã£o exclusiva em Direito das FamÃ­lias e na proteÃ§Ã£o integral da crianÃ§a.',
+                  'Linguagem acessÃ­vel: traduzimos o juridiquÃªs para que vocÃª tome decisÃµes com seguranÃ§a.',
+                  'Agilidade digital: resolvemos as etapas burocrÃ¡ticas com eficiÃªncia e sem deslocamentos desnecessÃ¡rios.'
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start">
                     <ShieldCheck className="text-brand-gold shrink-0 mt-1" size={20} />
@@ -251,7 +250,7 @@ export default function Home() {
             viewport={revealViewport}
             className="text-center mb-12 lg:mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-serif text-brand-navy">Dúvidas Frequentes</h2>
+            <h2 className="text-3xl md:text-5xl font-serif text-brand-navy">DÃºvidas Frequentes</h2>
           </motion.div>
           
           <Accordion items={faqs} />
@@ -270,10 +269,10 @@ export default function Home() {
           >
             <div className="max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-serif mb-6 leading-tight">
-                Dê o próximo passo com segurança
+                DÃª o prÃ³ximo passo com seguranÃ§a
               </h2>
               <p className="text-white/60 text-sm md:text-base mb-10 leading-relaxed">
-                Converse com nossa equipe e receba o amparo necessário para o seu momento.
+                Converse com nossa equipe e receba o amparo necessÃ¡rio para o seu momento.
               </p>
               <a
                 id="consulta-cta-final-home"
