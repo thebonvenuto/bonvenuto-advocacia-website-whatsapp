@@ -91,7 +91,7 @@ export default function ServiceLayout({
   return (
     <div className="overflow-hidden bg-brand-offwhite">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 lg:pt-48 lg:pb-32 overflow-hidden">
+      <section className="relative pt-24 pb-16 lg:pt-48 lg:pb-32 min-h-[calc(100svh-5rem)] overflow-hidden">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
             {/* Left Content */}

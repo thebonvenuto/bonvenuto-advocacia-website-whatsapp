@@ -32,7 +32,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-[100] glass-nav">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center shrink-0">
             <img
               src={bonvenutoLogo}
               alt="Bonvenuto Advocacia"
@@ -40,7 +40,7 @@ export default function Header() {
               decoding="async"
               width={320}
               height={96}
-              className="h-10 w-auto md:h-12 object-contain"
+              className="h-10 w-[133px] md:h-12 md:w-[160px] object-contain"
             />
           </Link>
 
