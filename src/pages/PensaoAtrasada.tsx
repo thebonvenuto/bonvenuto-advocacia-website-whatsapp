@@ -1,6 +1,8 @@
 import ServiceLayout from '../components/ServiceLayout';
 import { Calendar, HeartOff, PiggyBank } from 'lucide-react';
 import pensaoAtrasadaHeroImage from '../assets/Pens\u00e3o Aliment\u00edcia hero.png';
+import pensaoAtrasadaHeroMobile from '../assets/optimized/hero-pensao-alimenticia-mobile.avif';
+import pensaoAtrasadaHeroDesktop from '../assets/optimized/hero-pensao-alimenticia-desktop.avif';
 
 export default function PensaoAtrasada() {
   return (
@@ -8,6 +10,8 @@ export default function PensaoAtrasada() {
       title={<>Segurança e agilidade para recuperar a <span className="italic">pensão em atraso.</span></>}
       subtitle="A segurança financeira do seu filho não pode esperar. Atuamos com agilidade para garantir o cumprimento imediato do dever alimentar e a tranquilidade da sua família."
       heroImage={pensaoAtrasadaHeroImage}
+      heroImageMobile={pensaoAtrasadaHeroMobile}
+      heroImageDesktop={pensaoAtrasadaHeroDesktop}
       heroPrimaryButtonText="Falar com um Especialista"
       heroPrimaryButtonId="consulta-cta-hero-pensao-atrasada"
       description="Quando a pensão não é paga, existem mecanismos legais para garantir o recebimento. Atuamos com estratégias eficazes para recuperar valores em atraso, buscando assegurar o amparo que é de direito do seu filho."

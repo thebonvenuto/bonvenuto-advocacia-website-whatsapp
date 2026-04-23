@@ -5,6 +5,8 @@ import Section from '../components/ui/Section';
 import Accordion from '../components/ui/Accordion';
 import { CONTACT_INFO } from '../constants';
 import drCarloImage from '../assets/Foto Carlo1.jpg';
+import heroHomeMobile from '../assets/optimized/hero-home-mobile.avif';
+import heroHomeDesktop from '../assets/optimized/hero-home-desktop.avif';
 import {
   heroGroup,
   heroItem,
@@ -117,16 +119,20 @@ export default function Home() {
               className="relative lg:ml-auto w-full max-w-sm mx-auto lg:max-w-none mt-12 lg:mt-0"
             >
               <div className="aspect-[3/4] lg:aspect-[4/5] rounded-t-[120px] lg:rounded-t-[200px] overflow-hidden premium-shadow relative z-0">
-                <img
-                  src={drCarloImage}
-                  alt="Dr. Carlo Bonvenuto"
-                  fetchPriority="high"
-                  loading="eager"
-                  decoding="async"
-                  width={960}
-                  height={1280}
-                  className="w-full h-full scale-110 object-cover object-center"
-                />
+                <picture className="block w-full h-full">
+                  <source srcSet={heroHomeDesktop} media="(min-width: 768px)" type="image/avif" />
+                  <source srcSet={heroHomeMobile} type="image/avif" />
+                  <img
+                    src={drCarloImage}
+                    alt="Dr. Carlo Bonvenuto"
+                    fetchPriority="high"
+                    loading="eager"
+                    decoding="async"
+                    width={960}
+                    height={1200}
+                    className="w-full h-full scale-110 object-cover object-center"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-brand-navy/5 mix-blend-multiply" />
               </div>
               

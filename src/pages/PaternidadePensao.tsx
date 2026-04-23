@@ -3,6 +3,8 @@ import { FileText, UserX, Wallet, CheckCircle2 } from 'lucide-react';
 import paternidadePensaoHeroImage from '../assets/Paternidade e Pens\u00e3o hero.png';
 import paternidadePensaoFamilyImage from '../assets/Paternidade e Pens\u00e3o imagem quadrada de fam\u00edlia.png';
 import tjspTextureImage from '../assets/tjsp2.png';
+import paternidadePensaoHeroMobile from '../assets/optimized/hero-paternidade-pensao-mobile.avif';
+import paternidadePensaoHeroDesktop from '../assets/optimized/hero-paternidade-pensao-desktop.avif';
 
 export default function PaternidadePensao() {
   return (
@@ -10,6 +12,8 @@ export default function PaternidadePensao() {
       title={<>Reconhecimento de <span className="italic">paternidade</span> e amparo para o seu filho.</>}
       subtitle="Assegurar os direitos do seu filho exige cuidado e excelência jurídica. Atuamos para que o reconhecimento e o suporte financeiro sejam estabelecidos com a dignidade que sua família merece."
       heroImage={paternidadePensaoHeroImage}
+      heroImageMobile={paternidadePensaoHeroMobile}
+      heroImageDesktop={paternidadePensaoHeroDesktop}
       heroPrimaryButtonText="Falar com um Especialista"
       heroPrimaryButtonId="consulta-cta-hero-paternidade-pensao"
       description="O reconhecimento de paternidade é um direito fundamental. Ele assegura à criança não apenas o nome no registro, mas o acesso a direitos essenciais e ao amparo financeiro necessário para o seu desenvolvimento."

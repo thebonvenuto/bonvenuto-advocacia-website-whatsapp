@@ -2,6 +2,8 @@ import ServiceLayout from '../components/ServiceLayout';
 import { TrendingUp, GraduationCap, Users, ArrowRight } from 'lucide-react';
 import revisaoPensaoHeroImage from '../assets/Revis\u00e3o de Pens\u00e3o hero.jpg';
 import drCarloCardImage from '../assets/Foto Carlo1.jpg';
+import revisaoPensaoHeroMobile from '../assets/optimized/hero-revisao-pensao-mobile.avif';
+import revisaoPensaoHeroDesktop from '../assets/optimized/hero-revisao-pensao-desktop.avif';
 
 export default function RevisaoPensao() {
   return (
@@ -9,6 +11,8 @@ export default function RevisaoPensao() {
       title={<>Ajuste e equilíbrio para a <span className="italic">pensão alimentícia.</span></>}
       subtitle="A vida muda e as necessidades também. Quando o equilíbrio financeiro se altera, a lei permite o ajuste do valor da pensão para garantir a dignidade de quem recebe e a viabilidade de quem paga."
       heroImage={revisaoPensaoHeroImage}
+      heroImageMobile={revisaoPensaoHeroMobile}
+      heroImageDesktop={revisaoPensaoHeroDesktop}
       heroPrimaryButtonText="Falar com um Especialista"
       heroPrimaryButtonId="consulta-cta-hero-revisao-pensao"
       heroSecondaryButtonText="Entender Situações"

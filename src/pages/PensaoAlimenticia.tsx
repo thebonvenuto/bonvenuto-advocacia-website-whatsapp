@@ -1,6 +1,8 @@
 import ServiceLayout from '../components/ServiceLayout';
 import { Ban, HandCoins, History } from 'lucide-react';
 import pensaoAlimenticiaHeroImage from '../assets/Pens\u00e3o Aliment\u00edcia hero.png';
+import pensaoAlimenticiaHeroMobile from '../assets/optimized/hero-pensao-alimenticia-mobile.avif';
+import pensaoAlimenticiaHeroDesktop from '../assets/optimized/hero-pensao-alimenticia-desktop.avif';
 
 export default function PensaoAlimenticia() {
   return (
@@ -8,6 +10,8 @@ export default function PensaoAlimenticia() {
       title={<>Segurança e amparo para o seu filho através da <span className="italic">pensão alimentícia.</span></>}
       subtitle="Entenda como assegurar o suporte financeiro necessário para o desenvolvimento e o bem-estar do seu filho."
       heroImage={pensaoAlimenticiaHeroImage}
+      heroImageMobile={pensaoAlimenticiaHeroMobile}
+      heroImageDesktop={pensaoAlimenticiaHeroDesktop}
       heroPrimaryButtonText="Falar com um Especialista"
       heroPrimaryButtonId="consulta-cta-hero"
       description="A pensão alimentícia é a garantia de que seu filho terá acesso a alimentação, educação, saúde e lazer. Atuamos com foco na proteção integral do menor, buscando soluções que tragam segurança e tranquilidade para a sua família."

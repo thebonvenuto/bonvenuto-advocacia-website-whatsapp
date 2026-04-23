@@ -2,6 +2,8 @@ import ServiceLayout from '../components/ServiceLayout';
 import { Ban, ListChecks, AlertTriangle, ShieldCheck, MessageCircle } from 'lucide-react';
 import { CONTACT_INFO } from '../constants';
 import guardaConvivenciaHeroImage from '../assets/Guarda e Conviv\u00eancia hero (2).png';
+import guardaConvivenciaHeroMobile from '../assets/optimized/hero-guarda-convivencia-mobile.avif';
+import guardaConvivenciaHeroDesktop from '../assets/optimized/hero-guarda-convivencia-desktop.avif';
 
 export default function GuardaConvivencia() {
   return (
@@ -9,6 +11,8 @@ export default function GuardaConvivencia() {
       title={<>Segurança jurídica para a <span className="italic">convivência</span> e a guarda do seu filho.</>}
       subtitle="Atuamos com discrição e foco no bem-estar da criança, garantindo que o vínculo afetivo seja preservado com total segurança jurídica."
       heroImage={guardaConvivenciaHeroImage}
+      heroImageMobile={guardaConvivenciaHeroMobile}
+      heroImageDesktop={guardaConvivenciaHeroDesktop}
       heroPrimaryButtonText="Falar com um Especialista"
       heroPrimaryButtonId="consulta-cta-hero-guarda-convivencia"
       heroPrimaryButtonVariant="black"

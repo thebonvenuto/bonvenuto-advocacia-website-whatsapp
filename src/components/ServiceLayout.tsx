@@ -27,6 +27,8 @@ interface ServiceLayoutProps {
   title: React.ReactNode;
   subtitle: React.ReactNode;
   heroImage: string;
+  heroImageMobile?: string;
+  heroImageDesktop?: string;
   heroPrimaryButtonText?: string;
   heroPrimaryButtonId?: string;
   heroPrimaryButtonVariant?: 'gold' | 'black';
@@ -60,6 +62,8 @@ export default function ServiceLayout({
   title,
   subtitle,
   heroImage,
+  heroImageMobile,
+  heroImageDesktop,
   heroPrimaryButtonText = "Regularizar Pensão Agora",
   heroPrimaryButtonId,
   heroPrimaryButtonVariant = 'gold',
@@ -157,16 +161,20 @@ export default function ServiceLayout({
               className="relative lg:ml-auto w-full max-w-sm mx-auto lg:max-w-none mt-12 lg:mt-0"
             >
               <div className="aspect-[4/5] rounded-tl-[60px] rounded-br-[60px] lg:rounded-tl-[100px] lg:rounded-br-[100px] overflow-hidden premium-shadow relative z-0">
-                <img
-                  src={heroImage}
-                  alt="Servico Juridico"
-                  fetchPriority="high"
-                  loading="eager"
-                  decoding="async"
-                  width={900}
-                  height={1125}
-                  className="w-full h-full scale-110 object-cover object-center"
-                />
+                <picture className="block w-full h-full">
+                  {heroImageDesktop && <source srcSet={heroImageDesktop} media="(min-width: 768px)" type="image/avif" />}
+                  {heroImageMobile && <source srcSet={heroImageMobile} type="image/avif" />}
+                  <img
+                    src={heroImage}
+                    alt="Servico Juridico"
+                    fetchPriority="high"
+                    loading="eager"
+                    decoding="async"
+                    width={960}
+                    height={1200}
+                    className="w-full h-full scale-110 object-cover object-center"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-brand-navy/10 mix-blend-multiply" />
               </div>
               
