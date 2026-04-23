@@ -53,6 +53,10 @@ export default function RevisaoPensao() {
             <img 
               src={drCarloCardImage}
               alt="Dr. Carlo Bonvenuto" 
+              loading="lazy"
+              decoding="async"
+              width={480}
+              height={720}
               className="w-full h-full scale-110 object-cover object-[center_20%]"
             />
           </div>

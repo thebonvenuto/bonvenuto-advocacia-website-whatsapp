@@ -53,6 +53,11 @@ export default function About() {
                 <img
                   src={drCarloAboutImage}
                   alt="Dr. Carlo Bonvenuto"
+                  fetchPriority="high"
+                  loading="eager"
+                  decoding="async"
+                  width={900}
+                  height={1125}
                   className="w-full h-full scale-110 object-cover object-[center_20%]"
                 />
                 <div className="absolute inset-0 bg-brand-navy/10 mix-blend-multiply" />
@@ -126,6 +131,10 @@ export default function About() {
                   <img 
                     src={drCarloAboutImage}
                     alt={`Dr. ${CONTACT_INFO.lawyerName}`} 
+                    loading="lazy"
+                    decoding="async"
+                    width={128}
+                    height={128}
                     className="w-full h-full scale-110 object-cover object-[center_20%]"
                   />
                 </div>

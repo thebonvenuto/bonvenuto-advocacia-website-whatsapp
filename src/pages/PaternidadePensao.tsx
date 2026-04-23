@@ -44,6 +44,10 @@ export default function PaternidadePensao() {
             <img 
               src={paternidadePensaoFamilyImage}
               alt="Familia" 
+              loading="lazy"
+              decoding="async"
+              width={640}
+              height={640}
               className="w-full h-full scale-110 object-cover object-center"
             />
           </div>
@@ -52,6 +56,10 @@ export default function PaternidadePensao() {
                 <img 
                   src={tjspTextureImage}
                   alt="Textura" 
+                  loading="lazy"
+                  decoding="async"
+                  width={640}
+                  height={640}
                   className="w-full h-full scale-110 object-cover object-center"
                 />
              </div>

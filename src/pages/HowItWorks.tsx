@@ -72,6 +72,11 @@ export default function HowItWorks() {
                 <img
                   src={howItWorksHeroImage}
                   alt="Nossa Equipe"
+                  fetchPriority="high"
+                  loading="eager"
+                  decoding="async"
+                  width={900}
+                  height={1125}
                   className="w-full h-full scale-110 object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-brand-navy/10 mix-blend-multiply" />
@@ -183,6 +188,10 @@ export default function HowItWorks() {
                 <img 
                   src={sigiloSegurancaImage}
                   alt="Confianca" 
+                  loading="lazy"
+                  decoding="async"
+                  width={720}
+                  height={432}
                   className="w-full h-full scale-110 object-cover object-center"
                 />
               </div>

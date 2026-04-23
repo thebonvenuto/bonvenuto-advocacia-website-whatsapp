@@ -53,6 +53,11 @@ export default function FAQ() {
                 <img
                   src={faqHeroImage}
                   alt="Escritorio Bonvenuto"
+                  fetchPriority="high"
+                  loading="eager"
+                  decoding="async"
+                  width={900}
+                  height={1125}
                   className="w-full h-full scale-110 object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-brand-navy/5 mix-blend-multiply" />

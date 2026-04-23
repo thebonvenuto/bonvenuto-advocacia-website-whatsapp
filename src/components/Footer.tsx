@@ -33,6 +33,10 @@ export default function Footer() {
               <img
                 src={bonvenutoLogo}
                 alt="Bonvenuto Advocacia"
+                loading="lazy"
+                decoding="async"
+                width={320}
+                height={96}
                 className="h-12 w-auto object-contain"
               />
             </Link>

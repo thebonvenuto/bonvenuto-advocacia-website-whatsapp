@@ -120,6 +120,11 @@ export default function Home() {
                 <img
                   src={drCarloImage}
                   alt="Dr. Carlo Bonvenuto"
+                  fetchPriority="high"
+                  loading="eager"
+                  decoding="async"
+                  width={960}
+                  height={1280}
                   className="w-full h-full scale-110 object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-brand-navy/5 mix-blend-multiply" />

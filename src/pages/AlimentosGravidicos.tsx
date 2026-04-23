@@ -44,6 +44,10 @@ export default function AlimentosGravidicos() {
             <img 
               src={alimentosGravidicosUltrassomImage}
               alt="Ultrassom" 
+              loading="lazy"
+              decoding="async"
+              width={960}
+              height={540}
               className="w-full h-full scale-110 object-cover object-center"
             />
           </div>
@@ -51,6 +55,10 @@ export default function AlimentosGravidicos() {
             <img 
               src={alimentosGravidicosSapatinhosImage}
               alt="Sapatinhos de bebe" 
+              loading="lazy"
+              decoding="async"
+              width={960}
+              height={540}
               className="w-full h-full scale-110 object-cover object-center"
             />
           </div>
