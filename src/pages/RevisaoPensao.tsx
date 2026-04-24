@@ -9,8 +9,8 @@ import revisaoPensaoHeroDesktopWebp from '../assets/optimized/hero-revisao-pensa
 export default function RevisaoPensao() {
   return (
     <ServiceLayout
-      title={<>Ajuste e equilÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­brio para a <span className="italic">pensÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o alimentÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­cia.</span></>}
-      subtitle="A vida muda e as necessidades tambÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©m. Quando o equilÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­brio financeiro se altera, a lei permite o ajuste do valor da pensÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o para garantir a dignidade de quem recebe e a viabilidade de quem paga."
+      title={<>Ajuste e equilíbrio para a <span className="italic">pensão alimentícia.</span></>}
+      subtitle="A vida muda e as necessidades também. Quando o equilíbrio financeiro se altera, a lei permite o ajuste do valor da pensão para garantir a dignidade de quem recebe e a viabilidade de quem paga."
       heroImage={revisaoPensaoHeroDesktopWebp}
       heroImageMobile={revisaoPensaoHeroMobile}
       heroImageDesktop={revisaoPensaoHeroDesktop}
@@ -18,27 +18,27 @@ export default function RevisaoPensao() {
       heroImageWebpDesktop={revisaoPensaoHeroDesktopWebp}
       heroPrimaryButtonText="Falar com um Especialista"
       heroPrimaryButtonId="consulta-cta-hero-revisao-pensao"
-      heroSecondaryButtonText="Entender SituaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âµes"
-      description="O valor da pensÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o alimentÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­cia deve refletir a realidade atual. Seja pelo aumento das necessidades do seu filho ou pela mudanÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§a na condiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o financeira de quem paga, a revisÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o judicial ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© o caminho para restabelecer um equilÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­brio justo e adequado."
-      quote="O equilÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­brio ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© a base da justiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§a."
-      situationsTitle="Quando buscar orientaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o?"
-      situationsSubtitle="Identifique se vocÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âª estÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ vivenciando uma destas situaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âµes e precisa de suporte jurÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­dico especializado para ajustar o valor da pensÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o."
+      heroSecondaryButtonText="Entender Situações"
+      description="O valor da pensão alimentícia deve refletir a realidade atual. Seja pelo aumento das necessidades do seu filho ou pela mudança na condição financeira de quem paga, a revisão judicial é o caminho para restabelecer um equilíbrio justo e adequado."
+      quote="O equilíbrio é a base da justiça."
+      situationsTitle="Quando buscar orientação?"
+      situationsSubtitle="Identifique se você está vivenciando uma destas situações e precisa de suporte jurídico especializado para ajustar o valor da pensão."
       situations={[
         {
-          title: 'AlteraÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o na Renda',
-          desc: 'MudanÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§as significativas na situaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o financeira de quem paga, seja por aumento ou reduÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o de ganhos.',
+          title: 'Alteração na Renda',
+          desc: 'Mudanças significativas na situação financeira de quem paga, seja por aumento ou redução de ganhos.',
           icon: <TrendingUp size={24} />,
           variant: 'white'
         },
         {
           title: 'Novas Necessidades do Filho',
-          desc: 'Aumento de gastos com educaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o, saÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºde ou mudanÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§as naturais de fase da vida que demandam maior suporte.',
+          desc: 'Aumento de gastos com educação, saúde ou mudanças naturais de fase da vida que demandam maior suporte.',
           icon: <GraduationCap size={24} />,
           variant: 'gold'
         },
         {
           title: 'Novos Encargos Familiares',
-          desc: 'O nascimento de novos filhos ou novas responsabilidades legais que impactam o equilÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­brio da obrigaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o alimentar.',
+          desc: 'O nascimento de novos filhos ou novas responsabilidades legais que impactam o equilíbrio da obrigação alimentar.',
           icon: <Users size={24} />,
           variant: 'grey'
         }
@@ -46,9 +46,9 @@ export default function RevisaoPensao() {
       extraSituationCard={
         <div className="bg-[#111827] text-white p-10 shadow-[0_4px_20px_rgba(0,0,0,0.03)] flex flex-col md:col-span-2 lg:col-span-1 relative overflow-hidden">
           <div className="relative z-10">
-            <h3 className="text-xl font-serif mb-4">TransparÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âªncia e Verdade Real</h3>
+            <h3 className="text-xl font-serif mb-4">Transparência e Verdade Real</h3>
             <p className="text-white/80 leading-relaxed text-sm mb-8">
-              A clareza sobre a situaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o financeira ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© fundamental para uma decisÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o justa. Atuamos para identificar a realidade dos rendimentos e garantir o equilÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­brio.
+              A clareza sobre a situação financeira é fundamental para uma decisão justa. Atuamos para identificar a realidade dos rendimentos e garantir o equilíbrio.
             </p>
             <a href="#" className="inline-flex items-center text-brand-gold font-bold text-xs uppercase tracking-widest hover:text-white transition-colors">
               Saiba mais
@@ -70,39 +70,39 @@ export default function RevisaoPensao() {
         </div>
       }
       howItWorksTitle="Como funciona o processo"
-      howItWorksSubtitle="Nosso mÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©todo prioriza a clareza e a seguranÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§a do seu direito."
+      howItWorksSubtitle="Nosso método prioriza a clareza e a segurança do seu direito."
       howItWorks={[
         {
-          title: 'Levantamento de EvidÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âªncias',
-          desc: 'Reunimos informaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âµes que demonstrem a nova realidade financeira e as necessidades atuais.'
+          title: 'Levantamento de Evidências',
+          desc: 'Reunimos informações que demonstrem a nova realidade financeira e as necessidades atuais.'
         },
         {
-          title: 'Pedido de RevisÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o',
-          desc: 'Apresentamos ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â  justiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§a a necessidade de ajuste, demonstrando que o valor atual precisa ser reequilibrado.'
+          title: 'Pedido de Revisão',
+          desc: 'Apresentamos à justiça a necessidade de ajuste, demonstrando que o valor atual precisa ser reequilibrado.'
         },
         {
           title: 'Ajuste Legal',
-          desc: 'A justiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§a analisa as informaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âµes e define um novo valor, adequando a pensÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â  realidade presente.'
+          desc: 'A justiça analisa as informações e define um novo valor, adequando a pensão à realidade presente.'
         }
       ]}
-      faqTitle="DÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºvidas Frequentes"
+      faqTitle="Dúvidas Frequentes"
       faqSubtitle="Respostas fundamentais para o seu primeiro contato."
       faq={[
         { 
-          q: 'Quando ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© possÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­vel pedir a revisÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o?', 
-          a: 'A qualquer momento, desde que haja mudanÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§a comprovada na situaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o financeira de quem paga ou nas necessidades de quem recebe.' 
+          q: 'Quando é possível pedir a revisão?', 
+          a: 'A qualquer momento, desde que haja mudança comprovada na situação financeira de quem paga ou nas necessidades de quem recebe.' 
         },
         { 
-          q: 'ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â° possÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­vel tanto aumentar quanto diminuir o valor?', 
-          a: 'Sim. O objetivo ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© adequar o valor ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â  realidade atual, seja para aumentar o amparo ao filho ou para ajustar ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â  nova capacidade de pagamento.' 
+          q: 'É possível tanto aumentar quanto diminuir o valor?', 
+          a: 'Sim. O objetivo é adequar o valor à realidade atual, seja para aumentar o amparo ao filho ou para ajustar à nova capacidade de pagamento.' 
         },
         { 
-          q: 'O que realmente importa para o juiz na decisÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o?', 
-          a: 'SÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o analisadas evidÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âªncias concretas das necessidades da crianÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§a e das possibilidades financeiras dos pais, buscando sempre um equilÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­brio justo.' 
+          q: 'O que realmente importa para o juiz na decisão?', 
+          a: 'São analisadas evidências concretas das necessidades da criança e das possibilidades financeiras dos pais, buscando sempre um equilíbrio justo.' 
         }
       ]}
-      finalCtaTitle={<>Assegure o equilÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­brio <br />financeiro da sua <br />famÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­lia.</>}
-      finalCtaSubtitle="Converse com nossos especialistas para entender como regularizar o valor da pensÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o de forma justa e segura."
+      finalCtaTitle={<>Assegure o equilíbrio <br />financeiro da sua <br />família.</>}
+      finalCtaSubtitle="Converse com nossos especialistas para entender como regularizar o valor da pensão de forma justa e segura."
       finalCtaButtonText="Falar com um Especialista no WhatsApp"
       finalCtaButtonId="consulta-cta-final-revisao-pensao"
     />
