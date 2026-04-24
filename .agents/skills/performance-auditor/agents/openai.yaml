@@ -1,0 +1,4 @@
+schema_version: "1"
+display_name: "Performance Auditor"
+short_description: "Audita performance sem implementar."
+default_prompt: "Use $performance-auditor para diagnosticar gargalos de uma landing page, priorizar no maximo 3 acoes e parar antes de editar qualquer arquivo."
