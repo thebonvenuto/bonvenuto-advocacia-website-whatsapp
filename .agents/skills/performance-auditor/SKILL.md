@@ -9,6 +9,24 @@ description: Use when auditing landing page performance in a front-end website a
 
 Auditar gargalos reais de performance em landing pages e priorizar poucas acoes de alto ROI antes de qualquer implementacao.
 
+## Regras Anti-Vies
+
+- Nao tratar lazy loading, code splitting, preload, self-hosting de fontes ou qualquer tecnica especifica como solucao padrao.
+- Primeiro classificar o gargalo, depois discutir tecnicas possiveis.
+- Nao transformar uma preferencia tecnica em conclusao.
+- Nao usar a mesma tecnica como resposta para gargalos diferentes.
+
+## Memoria Operacional Do Projeto
+
+- Lazy loading agressivo em rotas comerciais ja causou regressao antes.
+- Paginas de servico sao landing pages de entrada, nao paginas secundarias por default.
+- Qualquer code splitting em rotas comerciais exige evidencia forte, fallback visual estavel e browser validation.
+- Imagens hero ja foram otimizadas com AVIF/WebP.
+- CLS ja foi corrigido.
+- Motion acima da dobra ja foi reduzido.
+- GTM e third-party scripts ja passaram por otimizacoes parciais.
+- Nao reabrir essas frentes sem nova evidencia clara.
+
 ## Quando Usar
 
 - Quando uma landing page estiver lenta e for preciso descobrir as causas mais provaveis primeiro.
@@ -36,6 +54,7 @@ Auditar gargalos reais de performance em landing pages e priorizar poucas acoes 
 - Diagnostico curto e objetivo.
 - Gargalos agrupados por categoria.
 - Classificacao de oportunidades por impacto, esforco e risco.
+- Separacao explicita entre fato observado, inferencia, hipotese a validar e recomendacao.
 - Plano de no maximo 3 acoes.
 - Indicacao clara do que nao mexer agora.
 - Sinalizacao de quando encaminhar para `bonvenuto-image-ops`.
@@ -60,6 +79,21 @@ Auditar gargalos reais de performance em landing pages e priorizar poucas acoes 
 - Tratar como medio risco qualquer proposta que altere hero, montagem inicial de componentes globais ou motion acima da dobra.
 - Tratar como baixo risco apenas acoes pequenas, localizadas e reversiveis.
 
+## Gates De Recomendacao
+
+- Sempre rotular cada afirmacao como `fato observado`, `inferencia`, `hipotese a validar` ou `recomendacao`.
+- Nao apresentar inferencia como fato.
+- Nao recomendar tecnica antes de confirmar o tipo de gargalo.
+- Em rotas comerciais, qualquer recomendacao de lazy loading ou code splitting exige:
+  - evidencia de bundle dominante;
+  - estimativa clara de ganho;
+  - analise de risco de entrada direta;
+  - fallback sem CLS;
+  - revisao humana;
+  - browser validation.
+- Em mudancas de fonte, considerar risco de FOIT/FOUT, percepcao premium e CLS antes de qualquer proposta.
+- Se TBT for o gargalo, avaliar primeiro third-party scripts, motion remanescente, componentes globais e bundle inicial.
+
 ## Categorias De Auditoria
 
 - Hero e above-the-fold.
@@ -83,6 +117,8 @@ Acionar `bonvenuto-image-ops` quando o principal gargalo estiver em:
 
 Nao acionar `bonvenuto-image-ops` se o gargalo principal for JS, motion, bundle, fonte ou third-party script.
 
+Nao reabrir imagem hero, fallback ou dimensao se ja houver evidencia de que essa frente foi estabilizada.
+
 ## Third-Party Scripts
 
 Sinalizar auditoria especifica de third-party scripts quando:
@@ -92,6 +128,14 @@ Sinalizar auditoria especifica de third-party scripts quando:
 - houver suspeita de inicializacao cedo demais de tags, pixels ou embeds.
 
 Nao propor remocao ou alteracao direta de GTM nesta skill. Apenas apontar a necessidade de auditoria dedicada.
+
+## Gate Para Rotas Comerciais
+
+- Tratar rotas comerciais como landing pages de entrada.
+- Nao sugerir lazy loading agressivo nessas rotas sem evidencia forte.
+- Nao sugerir code splitting sem justificar bundle dominante e risco de entrada direta.
+- Exigir fallback visual estavel antes de qualquer recomendacao estrutural.
+- Exigir revisao humana e browser validation quando a rota puder ser ponto de entrada pago.
 
 ## Formato De Resposta
 
@@ -106,6 +150,7 @@ Responder sempre com:
 
 Para cada oportunidade, informar:
 
+- tipo de leitura: fato observado, inferencia, hipotese a validar ou recomendacao;
 - categoria;
 - impacto: alto, medio ou baixo;
 - esforco: baixo, medio ou alto;
@@ -121,7 +166,8 @@ Para cada oportunidade, informar:
 - Preservar a logica de WhatsApp por rota em `src/constants.ts`.
 - Preservar fallback SPA da Hostinger via `.htaccess` e script de copia no build.
 - Nao alterar copy, layout comercial, estrategia comercial ou escopo juridico.
-- Nao implementar otimizações nesta skill.
+- Nao implementar otimizacoes nesta skill.
+- Nao permitir edicao de site, build ou alteracoes fora da pasta da skill.
 
 ## Workflow
 

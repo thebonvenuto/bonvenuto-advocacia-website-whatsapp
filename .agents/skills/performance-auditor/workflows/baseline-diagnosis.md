@@ -75,12 +75,18 @@ Executar a primeira passada segura de diagnostico de performance nas landing pag
    - risco comercial
    - custo de execucao
 7. Limitar a recomendacao a no maximo 3 acoes prioritarias.
-8. Marcar, quando aplicavel, se a proxima etapa exige:
+8. Classificar cada afirmacao como:
+   - fato observado
+   - inferencia
+   - hipotese a validar
+   - recomendacao
+9. Marcar, quando aplicavel, se a proxima etapa exige:
    - `bonvenuto-image-ops`
    - futura auditoria de third-party scripts
    - revisao humana
    - browser validation
-9. Gerar um relatorio de baseline e parar antes de qualquer implementacao.
+   - `safe-implementation-round`
+10. Gerar um relatorio de baseline e parar antes de qualquer implementacao.
 
 ## Gates De Custo
 
@@ -92,16 +98,17 @@ Executar a primeira passada segura de diagnostico de performance nas landing pag
 ## Gates De Evidencia
 
 - Nao promover uma hipotese a prioridade sem evidencias no codigo, nos assets ou nas metricas disponiveis.
-- Nao tratar lazy loading como resposta padrao sem indicar o risco.
+- Nao tratar lazy loading, code splitting, preload ou self-hosting de fontes como resposta padrao.
 - Nao reabrir CLS, fallback SPA, tracking ou CTA se estiverem estaveis e sem sinal de regressao.
 - Nao inferir culpa de GTM ou scripts externos sem sinais razoaveis de carga na main thread ou inicializacao cedo demais.
+- Em rotas comerciais, nao recomendar code splitting sem bundle dominante, risco de entrada direta, fallback sem CLS, revisao humana e browser validation.
 
 ## Artifacts Esperados
 
 - Relatorio de baseline com diagnostico consolidado.
 - Mapa curto de gargalos por categoria.
 - Ranking de oportunidades com impacto, esforco, risco tecnico, risco comercial e custo.
-- Sinalizacao de dependencia de `bonvenuto-image-ops`, auditoria de third-party scripts, revisao humana ou browser validation.
+- Sinalizacao de dependencia de `bonvenuto-image-ops`, auditoria de third-party scripts, revisao humana, browser validation ou `safe-implementation-round`.
 
 ## Pontos De Revisao Humana
 
@@ -109,12 +116,14 @@ Executar a primeira passada segura de diagnostico de performance nas landing pag
 - Quando houver trade-off entre performance e conversao.
 - Quando a recomendacao tocar hero, CTA visivel, motion acima da dobra ou componentes globais.
 - Quando surgir suspeita de GTM ou third-party script.
+- Quando a proposta envolver qualquer mudanca estrutural em rotas comerciais.
 
 ## Criterios De Parada
 
 - Parar ao fechar um diagnostico confiavel e um plano de no maximo 3 acoes.
 - Parar se a proxima etapa exigir implementacao, build ou browser test.
 - Parar se a evidencia for insuficiente para priorizar com seguranca.
+- Parar se a melhor proxima acao for apenas preparar um round seguro de implementacao.
 
 ## Formato Final De Saida
 
@@ -136,4 +145,6 @@ Responder com:
 - Nao alterar tracking, imagens, copy, layout, rotas ou `.htaccess`.
 - Nao executar otimizacao.
 - Nao sugerir lazy loading como solucao padrao.
+- Nao sugerir `workflow-lazy-load-split` como proximo passo padrao.
+- Se a proxima etapa for implementacao, recomendar `safe-implementation-round` ou um round seguro equivalente, nao um workflow focado em lazy loading.
 - Nao reabrir frentes ja estaveis sem evidencia.

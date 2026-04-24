@@ -1,0 +1,4 @@
+schema_version: "1"
+display_name: "Speed Guardian"
+short_description: "Orquestra rodadas seguras de performance."
+default_prompt: "Use $speed-guardian para auditar uma landing page, decidir a proxima rodada segura e parar quando o ganho marginal for baixo."
