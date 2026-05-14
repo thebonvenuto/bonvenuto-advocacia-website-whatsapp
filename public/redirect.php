@@ -61,7 +61,7 @@ $whatsappUrl = "https://api.whatsapp.com/send/?phone={$phone}&text={$text}&type=
 
     setTimeout(function () {
       window.location.href = '<?php echo $whatsappUrl; ?>';
-    }, 1200);
+    }, 4000);
   </script>
 
   <style>
