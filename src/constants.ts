@@ -33,7 +33,8 @@ export const CONTACT_INFO = {
     if (typeof window === "undefined") {
       return getWhatsAppLinkByPath("/");
     }
-    return getWhatsAppLinkByPath(window.location.pathname, this.phone);
+    const slug = window.location.pathname.replace(/^\//, '').replace(/\/$/, '') || 'home';
+    return `/redirect.php?origem=${slug}`;
   },
   cnpj: "34.240.835/0001-30",
   oabFirm: "30.721",

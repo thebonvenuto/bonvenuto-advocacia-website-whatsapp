@@ -54,6 +54,8 @@ interface ServiceLayoutProps {
   finalCtaSubtitle?: string;
   finalCtaButtonText?: string;
   finalCtaButtonId?: string;
+  heroPrimaryButtonHref?: string;
+  finalCtaButtonHref?: string;
 }
 
 export default function ServiceLayout({
@@ -90,8 +92,12 @@ export default function ServiceLayout({
   finalCtaTitle = <>Pronto para garantir <br />os direitos do seu <br />filho?</>,
   finalCtaSubtitle = "Não deixe para amanhã uma segurança que é de direito hoje. Nossa equipe está pronta para orientar seu próximo passo com discrição e excelência.",
   finalCtaButtonText = "Falar com um advogado",
-  finalCtaButtonId
+  finalCtaButtonId,
+  heroPrimaryButtonHref,
+  finalCtaButtonHref,
 }: ServiceLayoutProps) {
+  const resolvedHeroPrimaryButtonHref = heroPrimaryButtonHref ?? CONTACT_INFO.whatsappLink;
+  const resolvedFinalCtaButtonHref = finalCtaButtonHref ?? CONTACT_INFO.whatsappLink;
   return (
     <div className="overflow-hidden bg-brand-offwhite">
       {/* Hero Section */}
@@ -117,7 +123,7 @@ export default function ServiceLayout({
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                 <a
                   id={heroPrimaryButtonId}
-                  href={CONTACT_INFO.whatsappLink}
+                  href={resolvedHeroPrimaryButtonHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${heroPrimaryButtonVariant === 'black' ? 'bg-[#111827] text-white hover:bg-black' : 'btn-primary'} w-full sm:w-auto`}
@@ -376,7 +382,7 @@ export default function ServiceLayout({
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <a
                   id={finalCtaButtonId}
-                  href={CONTACT_INFO.whatsappLink}
+                  href={resolvedFinalCtaButtonHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-gold w-full sm:w-auto"

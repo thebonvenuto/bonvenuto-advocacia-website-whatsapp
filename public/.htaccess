@@ -11,6 +11,9 @@
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
+  # Serve redirect.php as a real PHP file, never captured by the SPA fallback.
+  RewriteRule ^redirect\.php$ - [L]
+
   # SPA fallback: route every other request to index.html.
   RewriteRule ^ index.html [L,QSA]
 </IfModule>
