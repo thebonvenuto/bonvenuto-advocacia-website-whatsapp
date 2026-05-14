@@ -64,7 +64,7 @@ $debug = isset($_GET['debug']) && $_GET['debug'] === '1';
     <?php if (!$debug): ?>
     setTimeout(function () {
       window.location.href = '<?php echo $whatsappUrl; ?>';
-    }, 1200);
+    }, 2000);
     <?php endif; ?>
   </script>
 
