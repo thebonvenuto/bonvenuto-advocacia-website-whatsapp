@@ -26,6 +26,8 @@ if (!array_key_exists($origem, $messagesByOrigem)) {
 
 $text = rawurlencode($messagesByOrigem[$origem]);
 $whatsappUrl = "https://api.whatsapp.com/send/?phone={$phone}&text={$text}&type=phone_number&app_absent=0";
+
+$debug = isset($_GET['debug']) && $_GET['debug'] === '1';
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -59,9 +61,11 @@ $whatsappUrl = "https://api.whatsapp.com/send/?phone={$phone}&text={$text}&type=
       pagina: 'redirect.php'
     });
 
+    <?php if (!$debug): ?>
     setTimeout(function () {
       window.location.href = '<?php echo $whatsappUrl; ?>';
     }, 4000);
+    <?php endif; ?>
   </script>
 
   <style>
@@ -97,6 +101,11 @@ $whatsappUrl = "https://api.whatsapp.com/send/?phone={$phone}&text={$text}&type=
   <!-- End Google Tag Manager noscript -->
 
   <div class="box">
+    <?php if ($debug): ?>
+    <p style="background:#fef9c3;border:1px solid #ca8a04;color:#854d0e;padding:10px 16px;border-radius:6px;font-size:14px;margin-bottom:16px;">
+      Modo de teste ativo. O redirecionamento automático está desativado.
+    </p>
+    <?php endif; ?>
     <h1>Redirecionando para o WhatsApp...</h1>
     <p>Você será encaminhado para o atendimento em instantes.</p>
     <p>
