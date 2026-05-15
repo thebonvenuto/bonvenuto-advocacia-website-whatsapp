@@ -56,6 +56,8 @@ interface ServiceLayoutProps {
   finalCtaButtonId?: string;
   heroPrimaryButtonHref?: string;
   finalCtaButtonHref?: string;
+  heroPrimaryButtonDataAttrs?: Record<string, string>;
+  finalCtaButtonDataAttrs?: Record<string, string>;
 }
 
 export default function ServiceLayout({
@@ -95,6 +97,8 @@ export default function ServiceLayout({
   finalCtaButtonId,
   heroPrimaryButtonHref,
   finalCtaButtonHref,
+  heroPrimaryButtonDataAttrs,
+  finalCtaButtonDataAttrs,
 }: ServiceLayoutProps) {
   const resolvedHeroPrimaryButtonHref = heroPrimaryButtonHref ?? CONTACT_INFO.whatsappLink;
   const resolvedFinalCtaButtonHref = finalCtaButtonHref ?? CONTACT_INFO.whatsappLink;
@@ -127,6 +131,7 @@ export default function ServiceLayout({
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${heroPrimaryButtonVariant === 'black' ? 'bg-[#111827] text-white hover:bg-black' : 'btn-primary'} w-full sm:w-auto`}
+                  {...heroPrimaryButtonDataAttrs}
                 >
                   {heroPrimaryButtonText}
                   <ArrowRight size={18} className="ml-3" />
@@ -386,6 +391,7 @@ export default function ServiceLayout({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-gold w-full sm:w-auto"
+                  {...finalCtaButtonDataAttrs}
                 >
                   <MessageCircle size={18} className="mr-3" />
                   {finalCtaButtonText}

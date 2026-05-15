@@ -17,6 +17,7 @@ export default function PensaoAlimenticia() {
       heroImageWebpDesktop={pensaoAlimenticiaHeroDesktopWebp}
       heroPrimaryButtonText="Falar com um Especialista"
       heroPrimaryButtonId="consulta-cta-hero"
+      heroPrimaryButtonDataAttrs={{ 'data-gtm-event': 'whatsapp_button_click', 'data-cta-location': 'hero', 'data-service': 'pensao-alimenticia' }}
       description="A pensão alimentícia é a garantia de que seu filho terá acesso a alimentação, educação, saúde e lazer. Atuamos com foco na proteção integral do menor, buscando soluções que tragam segurança e tranquilidade para a sua família."
       situationsTitle="Quando buscar orientação?"
       situationsSubtitle="Identifique se você está vivenciando uma destas situações e precisa de suporte jurídico especializado."
@@ -81,6 +82,7 @@ export default function PensaoAlimenticia() {
       finalCtaSubtitle="Estamos prontos para orientar seus próximos passos com discrição e foco no bem-estar da sua família."
       finalCtaButtonText="Falar com um Especialista no WhatsApp"
       finalCtaButtonId="consulta-cta-final"
+      finalCtaButtonDataAttrs={{ 'data-gtm-event': 'whatsapp_button_click', 'data-cta-location': 'final', 'data-service': 'pensao-alimenticia' }}
     />
   );
 }
